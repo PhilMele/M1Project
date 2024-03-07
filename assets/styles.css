@@ -96,11 +96,10 @@
         font-size: xx-large;
         color:#EEEEDF;
     }
+    
+    /*applies linear gradient top to bottom - credit https://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear*/
     .navbar-background-color{
         background:linear-gradient(#39406370, #39406300);
-
-
-        /*applies linear gradient top to bottom - credit https://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear*/
 
 
     } 
@@ -115,6 +114,16 @@
     .top-image-blurred-square.hidden {
         display: none;
     }
+
+    .nav-link-text{
+        color: #394063;
+        background: #eeeedfe0;
+        border: #394063;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+}
+
 
 /* Header */
 
