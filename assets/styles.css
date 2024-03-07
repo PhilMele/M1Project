@@ -23,6 +23,73 @@
         font-size: small;
         }
 
+    .section-box{
+        background: #f8f8f1;
+        padding: 10px;
+        margin: 10px 0;
+        display: inline-grid;
+        text-align: center;
+
+    }
+    /*general for all carousels*/
+    .carousel-inner{
+        position: relative;
+        width: 100%;
+        overflow: visible;
+        
+    }
+
+    /* Call to action buttons */
+
+    .cta-blue{
+        background-color:#329DB8;
+        color:#f8f8f1; 
+        border:none;
+        border-radius: 50px;
+        width: -webkit-fill-available;
+        padding: 10px;
+        margin: 5px;
+    }
+    .cta-white{
+        background-color:#f8f8f1; ;
+        color:#329DB8;
+        border:#329DB8 solid 1px;
+        border-radius: 50px;
+        width: -webkit-fill-available;
+        padding: 10px; 
+        margin: 5px; 
+    }
+
+    .card{
+        padding:inherit;
+        margin:1px;
+    }
+
+    .card-body{
+        padding: 5px;;
+    
+    }
+    .card-title{
+        font-size: 9px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    /*creates border in main element*/
+    main{
+        margin : 10px;
+    }
+
+    /*Our Customer H2 element - places element in middle of screen*/
+    .our-customer-header{
+        text-align: center;
+    }
+
+    /* Our Customer Container - creates margin between Our Customer H2 element and CTA buttons */
+    .our-customer-container{
+        margin: 5px 0 5px 0;
+    }
+
 
 /* Navbar */
 
@@ -67,14 +134,61 @@
 
 }
 
-
 /* credit https://dev.to/schleidens/how-to-use-blur-background-header-image-with-text-mask-a6a for blurred image*/
-.top-section-text {
+.top-image-blurred-square{
     position: absolute;
-    top: 50%;
-    border: 1px solid #f1f1f1;
+    bottom: 0;
+    width: 90%;
+    height: 60%;
+    background: rgb(255, 255, 255, 0.61);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+
 
 }
+
+.top-section-text {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.top-section-cta{
+    display: contents;
+
+}
+
+.top-section-cta-row{
+    display: inline-flex;
+}
+
+    .cta-blue-top-section{
+        background-color:#329DB8;
+        color:#f8f8f1; 
+        border:none;
+        border-radius: 50px;
+        width: 100%;
+        padding: 10px;
+        margin: 2px;
+        font-size: 11px;
+    }
+
+    .cta-white-top-section{
+        background-color:#f8f8f1; ;
+        color:#329DB8;
+        border:#329DB8 solid 1px;
+        border-radius: 50px;
+        width: 100%;
+        padding: 10px;
+        margin: 2px;
+        font-size: 11px;
+    }
+
 
 
 /* Public Sector Page */
@@ -95,5 +209,27 @@
         .row {
             display: grid;
         }
+
+        /* Override display property for card-row within a .row */
+        .row.card-row {
+            display: inline-flex;
+    }
+        /* Override display property for row.top-section-cta-row within a .row */
+        .row.top-section-cta-row{
+        display: flex;
+    }
+        /* Override height and top properties to move blurred squared up */
+        .top-image-blurred-square {
+            height: 40%;   
+            top: 50%;   
     }
 
+   /* Media Query for responsiveness when screen size is between 320px and 330px */
+    @media only screen and (max-width: 330px) {
+        /* Adjusts img elements to screen size in Index page when screen size is between 320px and 330px */
+        .top-image-blurred-square {
+            height: 60%;
+        }
+    
+        
+    }

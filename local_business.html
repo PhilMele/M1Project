@@ -39,9 +39,17 @@
             <div class="top-image-blurred-square">
 
                 <!--Text-->
-                <h1 class="top-section-text">Join The Adventure...</h1>
+                <h1 class="top-section-text">Join The Adventure.</h1>
 
                 <!--Call To Action Button/Form-->
+                <div class="container top-section-cta">
+                    <div class="row top-section-cta-row">
+                        <!-- Book Call Form -->
+                        <div class="col"><button class="cta-blue-top-section">Book a call</button></div>
+                        <!-- Email Us Form -->
+                        <div class="col"><button class="cta-white-top-section">Email us</button></div>
+                    </div>
+                </div>
 
             </div>
             <!--Top image ends -->
@@ -50,7 +58,7 @@
         
     </header>
 
-    <main>
+    <main class="body-border">
         <!--Text Section -->
 
             <!--Text Section - First Paragraph -->
@@ -66,145 +74,156 @@
             <div class="row">
                 <!--First Box Section Starts-->
                 <div class="section-box col">
+                    <div>
+                        <!--First Box Section - Icon -->
+                        <img src="assets/images/local_business/icons/create_unique_experience.svg">
 
-                    <!--First Box Section - Icon -->
-                    <img src="assets/images/local_business/icons/create_unique_experience.svg">
+                        <!--First Box Section - Title -->
+                        <h2>A Unique Experience.</h2>
+                        <!--First Box Section - Text -->
+                        <p>Make visiting your shop a unique and exciting experience, through a little <b>exploration game</b>.</p>
 
-                    <!--First Box Section - Title -->
-                    <h2>A Unique Experience.</h2>
-                    <!--First Box Section - Text -->
-                    <p>Make visiting your shop a unique and exciting experience, through a little <b>exploration game</b>.</p>
-
-                    <!--First Box Section - CTA -->
-                    <button>Book a call.</button>
+                        <!--First Box Section - CTA -->
+                        <button class="cta-blue">Book a call</button>
+                    </div>
                 </div>
                 <!--First Box Section Ends -->
 
                 <!--Second Box Section Starts -->
                 <div class="section-box col">
+                    <div>
+                        <!--Second Box Section - Icon -->
+                        <img src="assets/images/local_business/icons/attract_more_customers.svg">
 
-                    <!--Second Box Section - Icon -->
-                    <img src="assets/images/local_business/icons/attract_more_customers.svg">
+                        <!--Second Box Section - Title -->
+                        <h2>Rewards Your Customers.</h2>
 
-                    <!--Second Box Section - Title -->
-                    <h2>Rewards Your Customers.</h2>
+                        <!--Second Box Section - Text -->
 
-                    <!--Second Box Section - Text -->
+                        <p>Make your customer come back. More often. Our <b>digital loyalty card</b> allows your to send offers to your customers directly.</p>
 
-                    <p>Make your customer come back. More often. Our <b>digital loyalty card</b> allows your to send offers to your customers directly.</p>
-
-                    <!--Second Box Section - CTA -->
-                    <button>Book a call.</button>
+                        <!--Second Box Section - CTA -->
+                        <button class="cta-blue">Book a call</button>
+                    </div>
                 </div>
                 <!--Second Box Section Ends -->
 
                 <!--Third Box Section -->
                 <div class="section-box col">
+                    <div>
+                        <!--Third Box Section - Icon -->
+                        <img src="assets/images/local_business/icons/reward_customers.svg">
+                    
+                        <!--Third Box Section - Title -->
+                        <h2>Attract More.</h2>
 
-                    <!--Third Box Section - Icon -->
-                    <img src="assets/images/local_business/icons/reward_customers.svg">
+                        <!--Third Box Section - Text -->
+                        <p>Be referred by other businesses and local attractions, through our <b>digitial referral system</b>.</p>
 
-                    <!--Third Box Section - Title -->
-                    <h2>Attract More.</h2>
-
-                    <!--Third Box Section - Text -->
-                    <p>Be referred by other businesses and local attractions, through our <b>digitial referral system</b>.</p>
-
-                    <!--Third Box Section - CTA -->
-                    <button>Book a call.</button>
+                        <!--Third Box Section - CTA -->
+                        <button class="cta-blue">Book a call</button>
+                    </div>
                 </div>
                 <!--Third Box Section Ends -->
             </div>
         </div>
         <!-- Box Sections Ends -->
+        <hr>
 
         <!-- Our Customers Sections  -->
 
              <!-- Title  -->
-             <h2>Meet Other Customers Like You.</h2>
-
-
+             <h2 class="our-customer-header">Our Customers</h2>
 
             <!-- Carousel Section : credit https://stackoverflow.com/questions/75345639/bootstrap-5-multiple-cards-in-carousel -->
+                <!-- Test Carousel Section Starts -->
+                <!-- Carousel Container starts -->
+                <div class="container our-customer-container">
 
+                    <!-- Carousel ID div starts-->
+                    <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Inner Carousel Starts-->
+                        <div class="carousel-inner">
+                            <!-- 1/2 set of 3 cards-->
+                            <div class="carousel-item active">
+                                <!-- block of 3 cards-->
+                                <div class="row card-row">
 
-                <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <div class="col card">
+                                        <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cadw</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="col card"><img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Visit Caerphilly</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="col card">
+                                        <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Visit Worcestershire</h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 2/2 set of 3 cards-->
+                            <div class="carousel-item">
+                                <!-- block of 3 cards-->
+                                <div class="row card-row">
+
+                                    <div class="col card">
+                                        <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cadw</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="col card"><img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Visit Caerphilly</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="col card">
+                                        <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Visit Worcestershire</h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Inner Carousel Ends-->
                     </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <div class="card-group">
-                    <div class="card">
-                    <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                    <!-- Carousel ID div ends-->
+                </div>
+                <!-- Carousel Container ends -->
+
+                <!-- Test Carousel Section Ends -->
+                
+                <!-- Carousel Section Starts -->
+
+                <!-- Carousel Section Ends -->
+
+                <!-- Our Customers Sections Ends -->
+
+                <!-- Contact Us Row -->
+                <div class="container">
+                    <div class="row">
+                        <!-- Book Call Form -->
+                        <div class="col"><button class="cta-blue">Book a call</button></div>
+                        <!-- Email Us Form -->
+                        <div class="col"><button class="cta-white">Email us</button></div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="assets\images\local_business\cards\Caerphilly Castle Card.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets\images\local_business\cards\Castle Coch Card.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-                </div>
 
-                    </div>
-                    <div class="carousel-item">
-                <div class="card-group">
-                <div class="card">
-                    <img src="assets\images\local_business\cards\Cwmcarn Forest Card.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets\images\local_business\cards\Llancaiach Fawr Manor Card.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-                </div>
-
-                    </div>
-                </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                </div>
-
-
-            <!-- Carousel Section Ends  -->
-
-        <!-- Our Customers Sections Ends  -->
-
-
-        <!-- Contact Us Row  -->
-        <div class="conatiner">
-            <div class="row">
-
-                <!-- Book Call Form  -->
-                <div class="col"><button>Book a call.</button></div>
-
-                <!-- Email Us Form  -->
-                <div class="col"><button>Email us.</button></div>
-            </div>
-        </div>
         <!-- Contact Us Row Ends -->
 
     
