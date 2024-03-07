@@ -22,39 +22,55 @@
 </head>
 
 <body>
-    <!--Navbar starts-->
-        <!--Company Name Here-->
-        <div class="company-name">Doopee Doo!</div>
-        <!--Navbar buttons here-->
 
-    <!--Navbar ends-->
 
     <header>
+
         <!--Top Section -->
-        <div class="top-section">
-            <!--Top image-->
-            <img src="https://s3.eu-west-2.amazonaws.com/doopeedoo.com/local-shop-business-page.png" class="top-section-image">
+            <div class="top-section bg-img-local-business">
 
-            <!--Blurred Square on top of image-->
-            <div class="top-image-blurred-square">
-
-                <!--Text-->
-                <h1 class="top-section-text">Join The Adventure.</h1>
-
-                <!--Call To Action Button/Form-->
-                <div class="container top-section-cta">
-                    <div class="row top-section-cta-row">
-                        <!-- Book Call Form -->
-                        <div class="col"><button class="cta-blue-top-section">Book a call</button></div>
-                        <!-- Email Us Form -->
-                        <div class="col"><button class="cta-white-top-section">Email us</button></div>
+            <!--Navbar starts - credit boostrap https://getbootstrap.com/docs/5.3/components/navbar/-->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-background-color">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><div class="company-name">Doopee Doo!</div></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleBlurredSquare()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Local Business</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Public sector</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                    </div>
+                </nav>
+             <!--Navbar ends-->
 
-            </div>
-            <!--Top image ends -->
-        <!--Top Section ends -->
+            <!--Blurred Square on top of image starts-->
+                <div class="top-image-blurred-square" id="blurredSquare">
+
+                    <!--Text-->
+                    <h1 class="top-section-text" >Join The Adventure.</h1>
+
+                    <!--Call To Action Button/Form-->
+                    <div class="container top-section-cta">
+                        <div class="row top-section-cta-row">
+                            <!-- Book Call Form -->
+                            <div class="col"><button class="cta-blue-top-section">Book a call</button></div>
+                            <!-- Email Us Form -->
+                            <div class="col"><button class="cta-white-top-section">Email us</button></div>
+                        </div>
+                    </div>
+
+                </div>
+            <!--Blurred Square on top of image ends-->
+
         </div>
+        <!--Top Section ends -->
         
     </header>
 
@@ -136,10 +152,9 @@
              <h2 class="our-customer-header">Our Customers</h2>
 
             <!-- Carousel Section : credit https://stackoverflow.com/questions/75345639/bootstrap-5-multiple-cards-in-carousel -->
-                <!-- Test Carousel Section Starts -->
+
                 <!-- Carousel Container starts -->
                 <div class="container our-customer-container">
-
                     <!-- Carousel ID div starts-->
                     <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
                         <!-- Inner Carousel Starts-->
@@ -206,10 +221,6 @@
                 </div>
                 <!-- Carousel Container ends -->
 
-                <!-- Test Carousel Section Ends -->
-                
-                <!-- Carousel Section Starts -->
-
                 <!-- Carousel Section Ends -->
 
                 <!-- Our Customers Sections Ends -->
@@ -246,6 +257,67 @@
         </div>
         <p class="footer-text">&copy; 2024 Doopee Doo!</p>
     </footer>
-</body>
 
+<script>
+
+    //Explainer: This Javascript Hides .top-image-blurred-square when .navbar-toggler is click
+    //credit ChatGPT
+
+    // Steps:
+        // Step 1 - in .top-image-blurred-square add id="blurredSquare" to div
+
+        // Step 2 - create 2 variables
+            var blurredSquare = document.getElementById('blurredSquare');
+            var navbarCollapse = document.querySelector('.navbar-collapse');
+
+        //Step 3 -  in .navbar-toggler add statement onclick="toggleBlurredSquare()
+        // Upon clicking on .navbar-toggler the below function activates
+
+        //Step 4 - write up functions
+            // First function
+            //This function creates the possibility to hide the element where blurredSquare is present as an ID.
+                function toggleNavbar() {
+                    blurredSquare.classList.add('hidden');
+                }
+
+
+            // Second function
+            // By activating it applies a new property to the css currently applied to .top-image-blurred-square.hidden
+            // fecth location where function 'toggleBlurredSquare' is entered, fetch relevant css class where id 'blurredSquare' is located: .top-image-blurred-square
+            // look up for .top-image-blurred-square css property with '.hidden' class and applies appointed css
+                function toggleBlurredSquare() {
+                    blurredSquare.classList.toggle('hidden');
+                }
+
+        // Handle clicks outside the navbar
+        // this evenet listener wait for a 'click' to take on various actions
+        
+        //Step 5 - Add event listeners
+            document.addEventListener('click', function (event) {
+                // event.target defines each event against their class
+                // for each of these events a variable is created: isNavbarToggler, isNavbarCollapse, isBlurredSquare
+                
+                var isNavbarToggler = event.target.closest('.navbar-toggler');
+                var isNavbarCollapse = event.target.closest('.navbar-collapse');
+                var isBlurredSquare = event.target.closest('.top-image-blurred-square');
+
+                // these variables (isNavbarToggler, isNavbarCollapse, isBlurredSquare) are then used to define 
+                //what happens when a 'click' occurs on an element 
+                //that contains one of the classes targeted by event.target.closest
+
+                //this sections states that if the clicked element is not linked to 
+                // any of the variables stated above, then:
+                    //(1) navbarCollapse - which is on show - is removed
+                    //(2) blurredSquare  - which is set display: None through .top-image-blurred-square.hidden property - is removed
+                if (!isNavbarToggler && !isNavbarCollapse && !isBlurredSquare) {
+                    navbarCollapse.classList.remove('show');
+                    blurredSquare.classList.remove('hidden');
+                }
+            });
+
+
+</script>
+
+</body>
 </html>
+

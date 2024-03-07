@@ -13,10 +13,8 @@
         color: #394063;
     }
 
-    .company-name{
-        font-family: "Permanent Marker", cursive;
-        font-size: 14px;
-
+    b{
+        color:#329DB8;
     }
 
     p{
@@ -40,7 +38,6 @@
     }
 
     /* Call to action buttons */
-
     .cta-blue{
         background-color:#329DB8;
         color:#f8f8f1; 
@@ -50,6 +47,7 @@
         padding: 10px;
         margin: 5px;
     }
+
     .cta-white{
         background-color:#f8f8f1; ;
         color:#329DB8;
@@ -69,6 +67,7 @@
         padding: 5px;;
     
     }
+
     .card-title{
         font-size: 9px;
         text-align: center;
@@ -92,6 +91,30 @@
 
 
 /* Navbar */
+    .navbar-brand{
+        font-family: "Permanent Marker", cursive;
+        font-size: xx-large;
+        color:#EEEEDF;
+    }
+    .navbar-background-color{
+        background:linear-gradient(#39406370, #39406300);
+
+
+        /*applies linear gradient top to bottom - credit https://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear*/
+
+
+    } 
+
+    .fa-bars{
+        color:#EEEEDF;
+        font-size: 25px;
+    }
+
+    /*Hides .top-image-blurred-square when navbar-toggle is clicked - credit chatgpt for css and javascript*/
+    /*see local business page for full explain within javascript section*/
+    .top-image-blurred-square.hidden {
+        display: none;
+    }
 
 /* Header */
 
@@ -124,48 +147,48 @@
     }
 
 /* Local Businesses Page */
-.top-section {
-    position: relative;
-}
+    .top-section {
+        position: relative;
+    }
+    /*credit stack for solution - https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
+    .bg-img-local-business{
+        background-image: url(../assets/images/local_business/main_image/business-image-main-under-387px.png);
+        width: 100%;
+        height: 200px;
+    }
 
-.top-section-image {
-    width: 100%;
-    height: auto;
-
-}
-
-/* credit https://dev.to/schleidens/how-to-use-blur-background-header-image-with-text-mask-a6a for blurred image*/
-.top-image-blurred-square{
-    position: absolute;
-    bottom: 0;
-    width: 90%;
-    height: 60%;
-    background: rgb(255, 255, 255, 0.61);
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
+    /* credit https://dev.to/schleidens/how-to-use-blur-background-header-image-with-text-mask-a6a for blurred image*/
+    .top-image-blurred-square{
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        height: 60%;
+        background: rgb(255, 255, 255, 0.61);
+        border-radius: 20px;
+        margin: 5px;
+        padding: 5px;
 
 
-}
+    }
 
-.top-section-text {
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 32px;
-    letter-spacing: 0px;
-    text-align: left;
+    .top-section-text {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
 
-}
+    }
 
-.top-section-cta{
-    display: contents;
+    .top-section-cta{
+        display: contents;
 
-}
+    }
 
-.top-section-cta-row{
-    display: inline-flex;
-}
+    .top-section-cta-row{
+        display: inline-flex;
+    }
 
     .cta-blue-top-section{
         background-color:#329DB8;
@@ -212,16 +235,21 @@
 
         /* Override display property for card-row within a .row */
         .row.card-row {
-            display: inline-flex;
-    }
+                display: inline-flex;
+        }
         /* Override display property for row.top-section-cta-row within a .row */
         .row.top-section-cta-row{
         display: flex;
-    }
+        }
         /* Override height and top properties to move blurred squared up */
         .top-image-blurred-square {
-            height: 40%;   
-            top: 50%;   
+            height: 50%;
+            top: 40%; 
+        }
+
+        .bg-img-local-business{
+        height: 200px;
+    }
     }
 
    /* Media Query for responsiveness when screen size is between 320px and 330px */
@@ -229,7 +257,6 @@
         /* Adjusts img elements to screen size in Index page when screen size is between 320px and 330px */
         .top-image-blurred-square {
             height: 60%;
-        }
-    
-        
+            top: 32%;
+        }   
     }
