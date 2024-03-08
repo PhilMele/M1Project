@@ -153,6 +153,17 @@
     .width-control{
         width:100%
     }
+    /* removes blue links under a tag */
+    a {
+        color: inherit; 
+        text-decoration: none; 
+    }
+
+    a:hover {
+
+        text-decoration: none;
+        color: inherit;
+    }
 
 
 /* Navbar */
