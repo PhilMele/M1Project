@@ -13,13 +13,45 @@
         color: #394063;
     }
 
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 18px;
+    }
+
     b{
         color:#329DB8;
     }
 
     p{
-        font-size: small;
+        font-size: 14px;
+        font-weight: 250;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
         }
+    
+    .faq-section-box-title{
+        background: #f8f8f1;
+        padding: 10px;
+        margin: 5px 0;
+        display: inline-grid;
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
+
+    }
+
+    .faq-section-box-text{
+        background: #f8f8f1;
+        padding: 10px;
+        margin: 10px 0;
+        display: inline-grid;
+        text-align: left;
+        width: 100%;
+
+    }
 
     .section-box{
         background: #f8f8f1;
@@ -35,6 +67,10 @@
         width: 100%;
         overflow: visible;
         
+    }
+
+    #cardCarousel{
+        max-width: 100%;
     }
 
     /* Call to action buttons */
@@ -61,6 +97,7 @@
     .card{
         padding:inherit;
         margin:1px;
+        border-radius:20px;
     }
 
     .card-body{
@@ -87,6 +124,17 @@
     /* Our Customer Container - creates margin between Our Customer H2 element and CTA buttons */
     .our-customer-container{
         margin: 5px 0 5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center-text{
+        text-align: center;
+    }
+
+    .icons{
+    height:50px
     }
 
 
@@ -100,8 +148,6 @@
     /*applies linear gradient top to bottom - credit https://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear*/
     .navbar-background-color{
         background:linear-gradient(#39406370, #39406300);
-
-
     } 
 
     .fa-bars{
@@ -109,7 +155,7 @@
         font-size: 25px;
     }
 
-    /*Hides .top-image-blurred-square when navbar-toggle is clicked - credit chatgpt for css and javascript*/
+    /*Hides .top-image-blurred-square when navbar-toggle is clicked */
     /*see local business page for full explain within javascript section*/
     .top-image-blurred-square.hidden {
         display: none;
@@ -122,7 +168,7 @@
         text-align: center;
         padding: 5px;
         margin: 5px;
-}
+    }
 
 
 /* Header */
@@ -135,6 +181,7 @@
 
     .footer .footer-text{
         color: rgb(57, 64, 99, 0.6);
+        text-align: center;
     }
 
     .social-icons .black-social{
@@ -226,6 +273,76 @@
 /* Public Sector Page */
 
 /* Media Queries */
+    /*main images queries 387, 900
+   /* Media Query for responsiveness when screen size is over 900px*/
+    /*credits - https://stackoverflow.com/questions/26218954/crop-image-in-css */
+    @media only screen and (min-width: 769px) {
+        /*changes image in .bg-img-local-business to fit larger screens*/
+        .bg-img-local-business{
+        background-image: url(../assets/images/local_business/main_image/business-image-main-over-387px.jpeg);
+        width: 100%;
+        height:225px;
+        background-position: center;
+        background-size: cover;
+        }
+
+        .our-customer-container{
+            width:75%;
+        }
+              /* Override height and top properties to move blurred squared up */
+        .top-image-blurred-square {
+            height: 45%;
+            top: 40%; 
+            display:grid;
+        }
+
+        .section-box{
+            margin: 10px;
+        }
+    }
+  
+    /* Media Query for responsiveness when screen size is over 387px*/
+    /*credits - https://stackoverflow.com/questions/26218954/crop-image-in-css */
+    /*Known problem - if screen size is between >899 and <900 the image will show on repeat*/
+    /*However screen dont do fraction of pixel. This inconsistency is considered acceptable*/
+    @media only screen and (min-width: 387px) and (max-width:768px) {
+        /*changes image in .bg-img-local-business to fit larger screens*/
+        .bg-img-local-business{
+        background-image: url(../assets/images/local_business/main_image/business-image-main-over-387px.jpeg);
+        width: 100%;
+        height:225px;
+        background-position: bottom;
+        background-size: cover;
+    }
+        
+        /* Adjusts img elements to screen size in Index page when screen size is under 387px */
+        .index-main-audience img {
+            max-width: 100%;
+            height: auto;
+            
+        }
+
+        /* Overrides boostrap row from display "flex" to "grid". 
+        When reducing screen size to 387px and below, columns within rows 
+        started aligning to each other instead of stacking up */
+        .row {
+            display: grid;
+        }
+
+        /* Override display property for card-row within a .row */
+        .row.card-row {
+                display: inline-flex;
+        }
+        /* Override display property for row.top-section-cta-row within a .row */
+        .row.top-section-cta-row{
+        display: flex;
+        }
+        /* Override height and top properties to move blurred squared up */
+        .top-image-blurred-square {
+            height: 50%;
+            top: 40%; 
+        }
+    }
 
     /* Media Query for responsiveness when screen size is 387px and under */
     @media only screen and (max-width: 387px) {
@@ -252,13 +369,13 @@
         }
         /* Override height and top properties to move blurred squared up */
         .top-image-blurred-square {
-            height: 50%;
+            height: 45%;
             top: 40%; 
         }
 
         .bg-img-local-business{
-        height: 200px;
-    }
+        height: 225px;
+        }
     }
 
    /* Media Query for responsiveness when screen size is between 320px and 330px */

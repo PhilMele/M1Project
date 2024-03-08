@@ -44,6 +44,9 @@
                             <li class="nav-item">
                                 <a class="nav-link nav-link-text" href="#">Public sector</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-text" href="#">User Platform</a>
+                            </li>
                         </ul>
                     </div>
                     </div>
@@ -90,33 +93,33 @@
             <div class="row">
                 <!--First Box Section Starts-->
                 <div class="section-box col">
-                    <div>
-                        <!--First Box Section - Icon -->
-                        <img src="assets/images/local_business/icons/create_unique_experience.svg">
+                        <div class="column-content">
+                            <!--First Box Section - Icon -->
+                            <img class="icons" src="assets/images/local_business/icons/create_unique_experience.svg">
 
-                        <!--First Box Section - Title -->
-                        <h2>A Unique Experience.</h2>
-                        <!--First Box Section - Text -->
-                        <p>Make visiting your shop a unique and exciting experience, through a little <b>exploration game</b>.</p>
+                            <!--First Box Section - Title -->
+                            <h2>A Unique Experience.</h2>
+                            <!--First Box Section - Text -->
+                            <p class="center-text">Make visiting your shop a unique and exciting experience, through a little <b>exploration game</b>.</p>
 
-                        <!--First Box Section - CTA -->
-                        <button class="cta-blue">Book a call</button>
-                    </div>
+                            <!--First Box Section - CTA -->
+                            <button class="cta-blue">Book a call</button>
+                        </div>
                 </div>
                 <!--First Box Section Ends -->
 
                 <!--Second Box Section Starts -->
                 <div class="section-box col">
-                    <div>
+                    <div class="column-content">
                         <!--Second Box Section - Icon -->
-                        <img src="assets/images/local_business/icons/attract_more_customers.svg">
+                        <img class="icons" src="assets/images/local_business/icons/attract_more_customers.svg">
 
                         <!--Second Box Section - Title -->
                         <h2>Rewards Your Customers.</h2>
 
                         <!--Second Box Section - Text -->
 
-                        <p>Make your customer come back. More often. Our <b>digital loyalty card</b> allows your to send offers to your customers directly.</p>
+                        <p class="center-text">Make your customer come back. More often. Our <b>digital loyalty card</b> allows your to send offers to your customers directly.</p>
 
                         <!--Second Box Section - CTA -->
                         <button class="cta-blue">Book a call</button>
@@ -126,15 +129,15 @@
 
                 <!--Third Box Section -->
                 <div class="section-box col">
-                    <div>
+                    <div class="column-content">
                         <!--Third Box Section - Icon -->
-                        <img src="assets/images/local_business/icons/reward_customers.svg">
+                        <img class="icons" src="assets/images/local_business/icons/reward_customers.svg">
                     
                         <!--Third Box Section - Title -->
                         <h2>Attract More.</h2>
 
                         <!--Third Box Section - Text -->
-                        <p>Be referred by other businesses and local attractions, through our <b>digitial referral system</b>.</p>
+                        <p class="center-text">Be referred by other businesses and local attractions, through our <b>digitial referral system</b>.</p>
 
                         <!--Third Box Section - CTA -->
                         <button class="cta-blue">Book a call</button>
@@ -149,80 +152,85 @@
         <!-- Our Customers Sections  -->
 
              <!-- Title  -->
-             <h2 class="our-customer-header">Our Customers</h2>
+             <!-- Note: had to create a div to wrap carousel to control responsivness and making card and title consistently centered independently of the width assigned-->
+             <div class="d-flex justify-content-center align-items-center flex-column">
+                <h2 class="our-customer-header">Our Customers</h2>
 
-            <!-- Carousel Section : credit https://stackoverflow.com/questions/75345639/bootstrap-5-multiple-cards-in-carousel -->
+                <!-- Carousel Section : credit https://stackoverflow.com/questions/75345639/bootstrap-5-multiple-cards-in-carousel -->
 
                 <!-- Carousel Container starts -->
-                <div class="container our-customer-container">
-                    <!-- Carousel ID div starts-->
-                    <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <!-- Inner Carousel Starts-->
-                        <div class="carousel-inner">
-                            <!-- 1/2 set of 3 cards-->
-                            <div class="carousel-item active">
-                                <!-- block of 3 cards-->
-                                <div class="row card-row">
+                <!--note: container class was removed as it aligned content of carousel to left. Cannot seem to see any effect on design without it-->
+                
+                    <div class="our-customer-container">
+                        <!-- Carousel ID div starts-->
+                        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <!-- Inner Carousel Starts-->
+                            <div class="carousel-inner">
+                                <!-- 1/2 set of 3 cards-->
+                                <div class="carousel-item active">
+                                    <!-- block of 3 cards-->
+                                    <div class="row card-row">
 
-                                    <div class="col card">
-                                        <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Cadw</h5>
+                                        <div class="col card">
+                                            <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Cadw</h5>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col card"><img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Visit Caerphilly</h5>
+                                        <div class="col card"><img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Visit Caerphilly</h5>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col card">
-                                        <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Visit Worcestershire</h5>
+                                        <div class="col card">
+                                            <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Visit Worcestershire</h5>
+                                            </div>
                                         </div>
-                                    </div>
 
+                                    </div>
+                                </div>
+                                <!-- 2/2 set of 3 cards-->
+                                <div class="carousel-item">
+                                    <!-- block of 3 cards-->
+                                    <div class="row card-row">
+
+                                        <div class="col card">
+                                            <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Cadw</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="col card"><img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Visit Caerphilly</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="col card">
+                                            <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Visit Worcestershire</h5>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-                            <!-- 2/2 set of 3 cards-->
-                            <div class="carousel-item">
-                                <!-- block of 3 cards-->
-                                <div class="row card-row">
-
-                                    <div class="col card">
-                                        <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Cadw</h5>
-                                        </div>
-                                    </div>
-
-                                    <div class="col card"><img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Visit Caerphilly</h5>
-                                        </div>
-                                    </div>
-
-                                    <div class="col card">
-                                        <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Visit Worcestershire</h5>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                        
+                            <!-- Inner Carousel Ends-->
                         </div>
-                    
-                        <!-- Inner Carousel Ends-->
+                        <!-- Carousel ID div ends-->
                     </div>
-                    <!-- Carousel ID div ends-->
-                </div>
+                
                 <!-- Carousel Container ends -->
 
             <!-- Carousel Section Ends -->
-
+            </div>
         <!-- Our Customers Sections Ends -->
 
         <hr>
@@ -231,8 +239,44 @@
             <!-- Title -->
                 <h2 class="our-customer-header">FAQ</h2>
 
-            <!-- Questions -->
+            <!-- Questions - Credit : https://getbootstrap.com/docs/5.0/components/collapse/ -->  
+                <div class="">
+                    <button class="btn faq-section-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ1" aria-expanded="false" aria-controls="FAQ1">
+                        How much does it cost?
+                    </button>
+        
+                    <div class="collapse" id="FAQ1">
+                        <div class="faq-section-box-text">
+                            <p>Our prices start from £25 per month for small independent traders.</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="">
+                    <button class="btn faq-section-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ2" aria-expanded="false" aria-controls="FAQ2">
+                        Is this compliant with GDPR?
+                    </button>
+        
+                    <div class="collapse" id="FAQ2">
+                        <div class="faq-section-box-text">
+                            <p>Our data protection policies have scored full green against each ICO standard.
+                            <p>Working with local councils, we had to make sure our compliance was at top level .</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <button class="btn faq-section-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ3" aria-expanded="false" aria-controls="FAQ3">
+                        How quickly can we on-boarded?
+                    </button>
+        
+                    <div class="collapse" id="FAQ3">
+                        <div class="faq-section-box-text">
+                            <p>It takes about 30 minutes to onboard a new venue on our platform</p>
+                            <p>An extra 2 days will be necessary for the kit to be delivered to you.</p>
+                        </div>
+                    </div>
+                </div>
         <!-- FAQ Section Ends -->
 
         <hr>
@@ -272,7 +316,11 @@
 <script>
 
     //Explainer: This Javascript Hides .top-image-blurred-square when .navbar-toggler is click
-    //credit ChatGPT
+    //credit(s) : many sites where consulted below are a few where inspiration was taken from
+        // this initial link showed me the basic principles but I needed more to keep my background transparent : https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+        // for .hidden : https://stackoverflow.com/questions/41213737/how-to-make-text-appear-and-disappear-when-a-div-is-clicked-on
+        // use of event listener + removing event after clicking outside of element : https://stackoverflow.com/questions/73764793/toggle-menu-if-click-outside-then-hide
+        // 
 
     // Steps:
         // Step 1 - in .top-image-blurred-square add id="blurredSquare" to div
@@ -308,16 +356,16 @@
                 // event.target defines each event against their class
                 // for each of these events a variable is created: isNavbarToggler, isNavbarCollapse, isBlurredSquare
                 
-                var isNavbarToggler = event.target.closest('.navbar-toggler');
-                var isNavbarCollapse = event.target.closest('.navbar-collapse');
-                var isBlurredSquare = event.target.closest('.top-image-blurred-square');
+                var isNavbarToggler = event.target('.navbar-toggler');
+                var isNavbarCollapse = event.target('.navbar-collapse');
+                var isBlurredSquare = event.target('.top-image-blurred-square');
 
                 // these variables (isNavbarToggler, isNavbarCollapse, isBlurredSquare) are then used to define 
                 //what happens when a 'click' occurs on an element 
                 //that contains one of the classes targeted by event.target.closest
 
                 //this sections states that if the clicked element is not linked to 
-                // any of the variables stated above, then:
+                //any of the variables stated above, then:
                     //(1) navbarCollapse - which is on show - is removed
                     //(2) blurredSquare  - which is set display: None through .top-image-blurred-square.hidden property - is removed
                 if (!isNavbarToggler && !isNavbarCollapse && !isBlurredSquare) {
