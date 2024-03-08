@@ -79,73 +79,83 @@
 
     <main class="body-border">
         <!--Text Section -->
-
+            <!--Text Section Title-->
+            
             <!--Text Section - First Paragraph -->
-            <p>We take <b>locals and tourists</b>, of any age, on a question to discover their region what makes it unique: 
-            the food, the drinks and the local attractions.</p>
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <p class="center-text">We take <b>locals and tourists</b>, of any age, on a question to discover their region what makes it unique: 
+                the food, the drinks and the local attractions.</p>
 
-            <!--Text Section - Second Paragraph -->
-            <p>As a local business, here are the benefits to you.</p>
+                <!--Text Section - Second Paragraph -->
+                <p class="center-text">As a local business, here are the benefits to you.</p>
+            </div>
         <!--Text Section Ends -->
         <hr>
         <!-- Box Sections -->
-        <div class="container">
-            <div class="row">
-                <!--First Box Section Starts-->
-                <div class="section-box col">
-                        <div class="column-content">
-                            <!--First Box Section - Icon -->
-                            <img class="icons" src="assets/images/local_business/icons/create_unique_experience.svg">
+        <!-- credit: https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-cards-the-same-height-in-card-columns -->
 
-                            <!--First Box Section - Title -->
-                            <h2>A Unique Experience.</h2>
-                            <!--First Box Section - Text -->
-                            <p class="center-text">Make visiting your shop a unique and exciting experience, through a little <b>exploration game</b>.</p>
-
-                            <!--First Box Section - CTA -->
-                            <button class="cta-blue">Book a call</button>
+            <div class="container">
+                <div class="row">
+                    <!-- First Box Section -->
+                    <div class="col-md-4 d-flex ">
+                        <div class="section-box text-center"> <!-- Apply text-center here to center all content, or specifically target the icon container below -->
+                            <div class="icon-container"> <!-- Optional container for icon if more specific control is needed -->
+                                <img class="icons" src="assets/images/local_business/icons/create_unique_experience.svg" alt="Icon 1">
+                            </div>
+    
+                                <h2>A Unique Experience.</h2>
+                
+                            <div class="content-column">
+                                <p class="center-text">Make visiting your shop a unique and exciting experience, through a little <b>exploration game</b>.</p>
+                            </div>
+                            <button class="cta-blue hide-button">Book a call</button>
                         </div>
-                </div>
-                <!--First Box Section Ends -->
-
-                <!--Second Box Section Starts -->
-                <div class="section-box col">
-                    <div class="column-content">
-                        <!--Second Box Section - Icon -->
-                        <img class="icons" src="assets/images/local_business/icons/attract_more_customers.svg">
-
-                        <!--Second Box Section - Title -->
-                        <h2>Rewards Your Customers.</h2>
-
-                        <!--Second Box Section - Text -->
-
-                        <p class="center-text">Make your customer come back. More often. Our <b>digital loyalty card</b> allows your to send offers to your customers directly.</p>
-
-                        <!--Second Box Section - CTA -->
-                        <button class="cta-blue">Book a call</button>
                     </div>
-                </div>
-                <!--Second Box Section Ends -->
 
-                <!--Third Box Section -->
-                <div class="section-box col">
-                    <div class="column-content">
-                        <!--Third Box Section - Icon -->
-                        <img class="icons" src="assets/images/local_business/icons/reward_customers.svg">
+                    <!-- Second Box Section -->
+                    <div class="col-md-4 d-flex">
+                        <div class="section-box text-center">
+                            <div class="icon-container">
+                                <img class="icons" src="assets/images/local_business/icons/attract_more_customers.svg" alt="Icon 2">
+                            </div>
                     
-                        <!--Third Box Section - Title -->
-                        <h2>Attract More.</h2>
+                                <h2>Rewards Your Customers.</h2>
+                        
+                            <div class="content-column">
+                                <p class="center-text">Make your customer come back. More often. Our <b>digital loyalty card</b> allows you to send offers to your customers directly.</p>
+                            </div>
+                            <button class="cta-blue hide-button">Book a call</button>
+                        </div>
+                    </div>
 
-                        <!--Third Box Section - Text -->
-                        <p class="center-text">Be referred by other businesses and local attractions, through our <b>digitial referral system</b>.</p>
-
-                        <!--Third Box Section - CTA -->
-                        <button class="cta-blue">Book a call</button>
+                    <!-- Third Box Section -->
+                    <div class="col-md-4 d-flex">
+                        <div class="section-box text-center">
+                            <div class="icon-container">
+                                <img class="icons" src="assets/images/local_business/icons/reward_customers.svg" alt="Icon 3">
+                            </div>
+                    
+                                <h2>Attract More Visitors.</h2>
+                    
+                            <div class="content-column">
+                                <p class="center-text">Be referred by other businesses and local attractions, through our <b>digital referral system</b>.</p>
+                            </div>
+                            <button class="cta-blue hide-button">Book a call</button>
+                        </div>
                     </div>
                 </div>
-                <!--Third Box Section Ends -->
             </div>
-        </div>
+
+        <!-- CTA container hidden under 769px starts -->
+            <div class="container hide-container">
+                <div class="row">
+                    <!-- Book Call Form -->
+                    <div class="col"><button class="cta-blue">Book a call</button></div>
+                    <!-- Email Us Form -->
+                    <div class="col"><button class="cta-white">Email us</button></div>
+                </div>
+            </div>
+        <!-- CTA container hidden under 769px ends -->
         <!-- Box Sections Ends -->
         <hr>
 
@@ -153,6 +163,7 @@
 
              <!-- Title  -->
              <!-- Note: had to create a div to wrap carousel to control responsivness and making card and title consistently centered independently of the width assigned-->
+             
              <div class="d-flex justify-content-center align-items-center flex-column">
                 <h2 class="our-customer-header">Our Customers</h2>
 
@@ -231,16 +242,18 @@
 
             <!-- Carousel Section Ends -->
             </div>
+
         <!-- Our Customers Sections Ends -->
 
         <hr>
 
         <!-- FAQ Section Starts -->
+        <div class="d-flex justify-content-center align-items-center flex-column">
             <!-- Title -->
                 <h2 class="our-customer-header">FAQ</h2>
 
             <!-- Questions - Credit : https://getbootstrap.com/docs/5.0/components/collapse/ -->  
-                <div class="">
+                <div class="width-control">
                     <button class="btn faq-section-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ1" aria-expanded="false" aria-controls="FAQ1">
                         How much does it cost?
                     </button>
@@ -252,7 +265,8 @@
                     </div>
                 </div>
 
-                <div class="">
+                <div class="width-control">
+         
                     <button class="btn faq-section-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ2" aria-expanded="false" aria-controls="FAQ2">
                         Is this compliant with GDPR?
                     </button>
@@ -265,7 +279,7 @@
                     </div>
                 </div>
 
-                <div class="">
+                <div class="width-control">
                     <button class="btn faq-section-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ3" aria-expanded="false" aria-controls="FAQ3">
                         How quickly can we on-boarded?
                     </button>
@@ -277,11 +291,12 @@
                         </div>
                     </div>
                 </div>
+        </div>
         <!-- FAQ Section Ends -->
 
         <hr>
         <!-- Contact Us Row -->
-                <div class="container">
+                <div class="container width-control">
                     <div class="row">
                         <!-- Book Call Form -->
                         <div class="col"><button class="cta-blue">Book a call</button></div>
@@ -295,23 +310,25 @@
     
     </main>
 
-    <footer class="footer">
-        <hr class="line-middle">
-        <p class="footer-text">Find us on social media</p>
-        <div class="social-icons">
-            <!--Instagram Icon-->
-            <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram black-social"></i></a>
-            <!--Twitter Icon-->
-            <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter black-social"></i></a>
-            <!--Facebook Icon-->
-            <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook black-social"></i></a>
-            <!--Tiktok Icon-->
-            <a href="#" target="_blank" title="Tiktok"><i class="fab fa-tiktok black-social"></i></a>
-            <!--Youtube Icon-->
-            <a href="#" target="_blank" title="Youtube"><i class="fab fa-youtube black-social"></i></a>
-        </div>
-        <p class="footer-text">&copy; 2024 Doopee Doo!</p>
-    </footer>
+    <!-- Footer Starts -->
+        <footer class="footer">
+            <hr class="line-middle">
+            <p class="footer-text">Find us on social media</p>
+            <div class="social-icons">
+                <!--Instagram Icon-->
+                <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram black-social"></i></a>
+                <!--Twitter Icon-->
+                <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter black-social"></i></a>
+                <!--Facebook Icon-->
+                <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook black-social"></i></a>
+                <!--Tiktok Icon-->
+                <a href="#" target="_blank" title="Tiktok"><i class="fab fa-tiktok black-social"></i></a>
+                <!--Youtube Icon-->
+                <a href="#" target="_blank" title="Youtube"><i class="fab fa-youtube black-social"></i></a>
+            </div>
+            <p class="footer-text">&copy; 2024 Doopee Doo!</p>
+        </footer>
+    <!-- Footer Ends -->
 
 <script>
 
