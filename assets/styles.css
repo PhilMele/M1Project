@@ -392,6 +392,14 @@
         ;
         }
 
+        .bg-img-public-sector{
+            background-image: url(../assets/images/public_sector/main_image/public-sector-main-under-387px.jpeg);
+            width: 100%;
+            height:50vh;
+            background-position: center;
+            background-size: cover;
+        }
+
         .our-customer-container{
             width:50%;
         }
@@ -432,11 +440,19 @@
     @media only screen and (min-width: 769px) and (max-width:991px) {
         /*changes image in .bg-img-local-business to fit larger screens*/
         .bg-img-local-business{
-        background-image: url(../assets/images/local_business/main_image/business-image-main-over-387px.jpeg);
-        width: 100%;
-        height:225px;
-        background-position: center;
-        background-size: cover;
+            background-image: url(../assets/images/local_business/main_image/business-image-main-over-387px.jpeg);
+            width: 100%;
+            height:225px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .bg-img-public-sector{
+            background-image: url(../assets/images/public_sector/main_image/public-sector-main-under-387px.jpeg);
+            width: 100%;
+            height:50vh;
+            background-position: center;
+            background-size: cover;
         }
 
         .our-customer-container{
@@ -476,12 +492,20 @@
     @media only screen and (min-width: 387px) and (max-width:769px) {
         /*changes image in .bg-img-local-business to fit larger screens*/
         .bg-img-local-business{
-        background-image: url(../assets/images/local_business/main_image/business-image-main-over-387px-compressed.jpeg);
-        width: 100%;
-        height:225px;
-        background-position: bottom;
-        background-size: cover;
-    }
+            background-image: url(../assets/images/local_business/main_image/business-image-main-over-387px-compressed.jpeg);
+            width: 100%;
+            height:225px;
+            background-position: bottom;
+            background-size: cover;
+        }
+
+        .bg-img-public-sector{
+            background-image: url(../assets/images/public_sector/main_image/public-sector-main-under-387px.jpeg);
+            width: 100%;
+            height:40vh;
+            background-position: center;
+            background-size: cover;
+        }
         
         /* Adjusts img elements to screen size in Index page when screen size is under 387px */
         .index-main-audience img {
