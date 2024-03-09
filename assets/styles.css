@@ -6,11 +6,16 @@
 
 
 /* General */
+    html{
+        background: black;
 
+    }
     body {
         background-color: #EEEEDF;
         font-family: "JetBrains Mono", monospace;
         color: #394063;
+        max-width: 2190px;
+        margin: 0 auto;
     }
 
     h1{
@@ -77,6 +82,9 @@
         max-width: 100%;
     }
 
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        background-color: #394063;
+    }
     /* Call to action buttons */
     .cta-blue{
         background-color:#329DB8;
@@ -165,6 +173,14 @@
         color: inherit;
     }
 
+    /* this didnt work. so I used an ID instead
+    .center-text label {
+        text-align: left !important;
+    }*/
+
+    .center-text #label-contact-us {
+        text-align: left;
+    }
 
 /* Navbar */
     .navbar-brand{
@@ -301,33 +317,47 @@
 
 /* Public Sector Page */
 
-/* Media Queries */
-    /*main images queries 387, 900
-   /* Media Query for responsiveness when screen size is over 900px*/
-    /*credits - https://stackoverflow.com/questions/26218954/crop-image-in-css */
-    @media only screen and (min-width: 991px)  {
-        /*changes image in .bg-img-local-business to fit larger screens*/
-        .bg-img-local-business{
-        background-image: url(../assets/images/local_business/main_image/business-image-main-over-387px.jpeg);
+    /*credit stack for solution - https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
+    .bg-img-public-sector{
+        background-image: url(../assets/images/public_sector/main_image/public-sector-main-under-387px.jpeg);
         width: 100%;
-        height:225px;
+        height:25vh;
         background-position: center;
         background-size: cover;
+    }
+
+
+/* Media Queries */
+    /*main images queries 387, 900 up to 2192px
+   /* Media Query for responsiveness when screen size is over 900px up to 2192px - which is the navbar image size*/
+   /*from this the navbar image height works out as a percenatge of the users' screen*/
+    /*credits - https://stackoverflow.com/questions/26218954/crop-image-in-css */
+
+     @media only screen and (min-width: 2192px) {
+        /*changes image in .bg-img-local-business to fit larger screens*/
+        .bg-img-local-business{
+        background-image: url(../assets/images/local_business/main_image/business-image-main-over-387px-compressed.jpeg);
+        width: 100%;
+        height:25vh;
+        background-position: center;
+        background-size: cover;
+        ;
         }
 
         .our-customer-container{
-            width:75%;
+            width:50%;
         }
               /* Override height and top properties to move blurred squared up */
         .top-image-blurred-square {
-            height: 45%;
-            top: 40%; 
+            height: 35%;
+            top: 60%; 
             display:grid;
+            width: 50%;
         }
 
         .section-box{
             margin: 10px;
-            display: grid;
+            display: flow;
         }
         /*Displays/hides CTA buttons based on screen size*/
         .hide-container{
@@ -339,10 +369,65 @@
             display:none;
         }
         .width-control{
-            width:75%
+            width:50%
+        }
+
+        .navbar-brand{
+            font-size: xxx-large;
+        }
+
+        .navbar-background-color{
+            background: linear-gradient(#39406370, #39406300);
         }
     }
 
+    @media only screen and (min-width: 991px) and (max-width:2192px)  {
+        /*changes image in .bg-img-local-business to fit larger screens*/
+        .bg-img-local-business{
+        background-image: url(../assets/images/local_business/main_image/business-image-main-over-387px-compressed.jpeg);
+        width: 100%;
+        height:50vh;
+        background-position: center;
+        background-size: cover;
+        ;
+        }
+
+        .our-customer-container{
+            width:50%;
+        }
+              /* Override height and top properties to move blurred squared up */
+        .top-image-blurred-square {
+            height: 35%;
+            top: 60%; 
+            display:grid;
+            width: 50%;
+        }
+
+        .section-box{
+            margin: 10px;
+            display: flow;
+        }
+        /*Displays/hides CTA buttons based on screen size*/
+        .hide-container{
+            display: grid;
+            
+        }
+
+        .hide-button{
+            display:none;
+        }
+        .width-control{
+            width:50%
+        }
+
+        .navbar-brand{
+            font-size: xxx-large;
+        }
+
+        .navbar-background-color{
+            background: linear-gradient(#39406370, #39406300);
+        }
+    }
 
     @media only screen and (min-width: 769px) and (max-width:991px) {
         /*changes image in .bg-img-local-business to fit larger screens*/
@@ -384,8 +469,6 @@
 
     }
 
-  
-  
     /* Media Query for responsiveness when screen size is over 387px*/
     /*credits - https://stackoverflow.com/questions/26218954/crop-image-in-css */
     /*Known problem - if screen size is between >899 and <900 the image will show on repeat*/
@@ -393,7 +476,7 @@
     @media only screen and (min-width: 387px) and (max-width:769px) {
         /*changes image in .bg-img-local-business to fit larger screens*/
         .bg-img-local-business{
-        background-image: url(../assets/images/local_business/main_image/business-image-main-over-387px.jpeg);
+        background-image: url(../assets/images/local_business/main_image/business-image-main-over-387px-compressed.jpeg);
         width: 100%;
         height:225px;
         background-position: bottom;
@@ -451,6 +534,7 @@
         /* Override display property for row.top-section-cta-row within a .row */
         .row.top-section-cta-row{
         display: flex;
+        font-size: 14px;
         }
         /* Override height and top properties to move blurred squared up */
         .top-image-blurred-square {
@@ -461,13 +545,18 @@
         .bg-img-local-business{
         height: 225px;
         }
+
+        .bg-img-public-sector{
+        height: 225px;
+        }
+
     }
 
    /* Media Query for responsiveness when screen size is between 320px and 330px */
     @media only screen and (max-width: 330px) {
         /* Adjusts img elements to screen size in Index page when screen size is between 320px and 330px */
         .top-image-blurred-square {
-            height: 60%;
-            top: 32%;
+            height: 50%;
+            top: 40%;
         }   
     }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Boostrap - required for carousel-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
     <!--CSS-->
@@ -27,17 +27,17 @@
     <header>
 
         <!--Top Section -->
-            <div class="top-section bg-img-local-business">
+            <div class="top-section bg-img-local-business" aria-label="Description of the action or content represented by the image">
 
             <!--Navbar starts - credit boostrap https://getbootstrap.com/docs/5.3/components/navbar/-->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-background-color">
                     <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><div class="company-name">Doopee Doo!</div></a>
+                    <a class="navbar-brand" href="index.html">Doopee Doo</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleBlurredSquare()">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item nav-item-text">
                                 <a class="nav-link active nav-link-text" aria-current="page" href="local_business.html">Local Business</a>
                             </li>
@@ -63,9 +63,9 @@
                     <div class="container top-section-cta">
                         <div class="row top-section-cta-row">
                             <!-- Book Call Form -->
-                            <div class="col"><button class="cta-blue-top-section"><a href="https://calendly.com/phil-og8/30min?month=2024-03" target="_blank">Book a call</a></button></div>
+                            <div class="col"><a href="https://calendly.com/phil-og8/30min?month=2024-03" target="_blank"><button class="cta-blue">Book a call</button></a></div>
                             <!-- Email Us Form -->
-                            <div class="col"><button class="cta-white-top-section">Email us</button></div>
+                            <div class="col"><a href="contact_us.html"><button class="cta-white">Email us</button></a></div>
                         </div>
                     </div>
 
@@ -96,11 +96,12 @@
 
             <div class="container">
                 <div class="row">
+                <h2 class="our-customer-header">The Benefits</h2>
                     <!-- First Box Section -->
                     <div class="col-md-4 d-flex ">
-                        <div class="section-box text-center"> <!-- Apply text-center here to center all content, or specifically target the icon container below -->
-                            <div class="icon-container"> <!-- Optional container for icon if more specific control is needed -->
-                                <img class="icons" src="assets/images/local_business/icons/create_unique_experience.svg" alt="Icon 1">
+                        <div class="section-box text-center"> 
+                            <div class="icon-container"> 
+                                <img class="icons" src="assets/images/local_business/icons/create_unique_experience.svg" alt="Create a unique experience for your customer with Doopee Doo Loyalty Card and our exploration game" loading="lazy">
                             </div>
     
                                 <h2>A Unique Experience.</h2>
@@ -108,7 +109,7 @@
                             <div class="content-column">
                                 <p class="center-text">Make visiting your shop a unique and exciting experience, through a little <b>exploration game</b>.</p>
                             </div>
-                            <button class="cta-blue hide-button"><a href="https://calendly.com/phil-og8/30min?month=2024-03" target="_blank">Book a call</a></button>
+                            <a href="https://calendly.com/phil-og8/30min?month=2024-03" target="_blank"><button class="cta-blue hide-button">Book a call</button></a>
                         </div>
                     </div>
 
@@ -116,7 +117,7 @@
                     <div class="col-md-4 d-flex">
                         <div class="section-box text-center">
                             <div class="icon-container">
-                                <img class="icons" src="assets/images/local_business/icons/attract_more_customers.svg" alt="Icon 2">
+                                <img class="icons" src="assets/images/local_business/icons/attract_more_customers.svg" alt="Reward your customers with Doopee Doo Loyalty Card" loading="lazy">
                             </div>
                     
                                 <h2>Rewards Your Customers.</h2>
@@ -124,7 +125,7 @@
                             <div class="content-column">
                                 <p class="center-text">Make your customer come back. More often. Our <b>digital loyalty card</b> allows you to send offers to your customers directly.</p>
                             </div>
-                            <button class="cta-blue hide-button"><a href="https://calendly.com/phil-og8/30min?month=2024-03" target="_blank">Book a call</a></button>
+                            <a href="https://calendly.com/phil-og8/30min?month=2024-03" target="_blank"><button class="cta-blue hide-button">Book a call</button></a>
                         </div>
                     </div>
 
@@ -132,7 +133,7 @@
                     <div class="col-md-4 d-flex">
                         <div class="section-box text-center">
                             <div class="icon-container">
-                                <img class="icons" src="assets/images/local_business/icons/reward_customers.svg" alt="Icon 3">
+                                <img class="icons" src="assets/images/local_business/icons/reward_customers.svg" alt="Attract new customers with Doopee Doo Loyalty Card and exploration system and get referred by other venues" loading="lazy">
                             </div>
                     
                                 <h2>Attract More Visitors.</h2>
@@ -140,7 +141,7 @@
                             <div class="content-column">
                                 <p class="center-text">Be referred by other businesses and local attractions, through our <b>digital referral system</b>.</p>
                             </div>
-                            <button class="cta-blue hide-button"><a href="https://calendly.com/phil-og8/30min?month=2024-03" target="_blank">Book a call</a></button>
+                            <a href="https://calendly.com/phil-og8/30min?month=2024-03" target="_blank"><button class="cta-blue hide-button">Book a call</button></a>
                         </div>
                     </div>
                 </div>
@@ -150,9 +151,9 @@
             <div class="container hide-container">
                 <div class="row">
                     <!-- Book Call Form -->
-                    <div class="col"><button class="cta-blue"><a href="https://calendly.com/phil-og8/30min?month=2024-03" target="_blank">Book a call</a></button></div>
+                    <div class="col"><a href="https://calendly.com/phil-og8/30min?month=2024-03" target="_blank"><button class="cta-blue">Book a call</button></a></div>
                     <!-- Email Us Form -->
-                    <div class="col"><button class="cta-white">Email us</button></div>
+                    <div class="col"><a href="contact_us.html"><button class="cta-white">Email us</button></a></div>
                 </div>
             </div>
         <!-- CTA container hidden under 769px ends -->
@@ -174,7 +175,7 @@
                 
                     <div class="our-customer-container">
                         <!-- Carousel ID div starts-->
-                        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div id="cardCarousel" class="carousel slide">
                             <!-- Inner Carousel Starts-->
                             <div class="carousel-inner">
                                 <!-- 1/2 set of 3 cards-->
@@ -183,20 +184,20 @@
                                     <div class="row card-row">
 
                                         <div class="col card">
-                                            <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                            <img src="assets\images\local_business\cards\Brew Monster Card.png" class="card-img-top" alt="Collect Brew Monster's loyalty card with Doopee Doo and be rewarded" loading="lazy">
                                             <div class="card-body">
-                                                <h5 class="card-title">Cadw</h5>
+                                                <h5 class="card-title">Brew Monster</h5>
                                             </div>
                                         </div>
 
-                                        <div class="col card"><img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                        <div class="col card"><img src="assets\images\local_business\cards\Da Coffe Card.png" class="card-img-top" alt="Collect Da Coffee's loyalty card with Doopee Doo and be rewarded" loading="lazy">
                                             <div class="card-body">
-                                                <h5 class="card-title">Visit Caerphilly</h5>
+                                                <h5 class="card-title">Da Coffe Shop</h5>
                                             </div>
                                         </div>
 
                                         <div class="col card">
-                                            <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                            <img src="assets\images\local_business\cards\The Bike Lock Card.png" class="card-img-top" alt="Collect The Bike Locks loyalty card with Doopee Doo and be rewarded" loading="lazy">
                                             <div class="card-body">
                                                 <h5 class="card-title">Visit Worcestershire</h5>
                                             </div>
@@ -210,22 +211,22 @@
                                     <div class="row card-row">
 
                                         <div class="col card">
-                                            <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                            <img src="assets\images\local_business\cards\The Mine Card.png" class="card-img-top" alt="Collect The Mine's loyalty card with Doopee Doo and be rewarded" loading="lazy">
                                             <div class="card-body">
-                                                <h5 class="card-title">Cadw</h5>
+                                                <h5 class="card-title">The Mine</h5>
                                             </div>
                                         </div>
 
-                                        <div class="col card"><img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                        <div class="col card"><img src="assets\images\local_business\cards\Toms Smashed Burgers Card.png" class="card-img-top" alt="Collect Tom's Smashed Burgers's loyalty card with Doopee Doo and be rewarded" loading="lazy">
                                             <div class="card-body">
-                                                <h5 class="card-title">Visit Caerphilly</h5>
+                                                <h5 class="card-title">Tom's Smashed Burgers</h5>
                                             </div>
                                         </div>
 
                                         <div class="col card">
-                                            <img src="assets\images\local_business\cards\Caerleon Amphitheare Card.png" class="card-img-top" alt="...">
+                                            <img src="assets\images\local_business\cards\Tramshed-Tech Card.png" class="card-img-top" alt="Collect Tramshed's loyalty card with Doopee Doo and be rewarded" loading="lazy">
                                             <div class="card-body">
-                                                <h5 class="card-title">Visit Worcestershire</h5>
+                                                <h5 class="card-title">Tramshed Tech</h5>
                                             </div>
                                         </div>
 
@@ -234,6 +235,17 @@
                             </div>
                         
                             <!-- Inner Carousel Ends-->
+                            <!-- Navigation Buttons Starts  -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            <!-- Navigation Buttons Ends -->
+
                         </div>
                         <!-- Carousel ID div ends-->
                     </div>
@@ -248,62 +260,62 @@
         <hr>
 
         <!-- FAQ Section Starts -->
-        <div class="d-flex justify-content-center align-items-center flex-column">
-            <!-- Title -->
-                <h2 class="our-customer-header">FAQ</h2>
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <!-- Title -->
+                    <h2 class="our-customer-header">FAQ</h2>
 
-            <!-- Questions - Credit : https://getbootstrap.com/docs/5.0/components/collapse/ -->  
-                <div class="width-control">
-                    <button class="btn faq-section-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ1" aria-expanded="false" aria-controls="FAQ1">
-                        How much does it cost?
-                    </button>
-        
-                    <div class="collapse" id="FAQ1">
-                        <div class="faq-section-box-text">
-                            <p>Our prices start from £25 per month for small independent traders.</p>
+                <!-- Questions - Credit : https://getbootstrap.com/docs/5.0/components/collapse/ -->  
+                    <div class="width-control">
+                        <button class="btn faq-section-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ1" aria-expanded="false" aria-controls="FAQ1">
+                            How much does it cost?
+                        </button>
+            
+                        <div class="collapse" id="FAQ1">
+                            <div class="faq-section-box-text">
+                                <p>Our prices start from £25 per month for small independent traders.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="width-control">
-         
-                    <button class="btn faq-section-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ2" aria-expanded="false" aria-controls="FAQ2">
-                        Is this compliant with GDPR?
-                    </button>
-        
-                    <div class="collapse" id="FAQ2">
-                        <div class="faq-section-box-text">
-                            <p>Our data protection policies have scored full green against each ICO standard.
-                            <p>Working with local councils, we had to make sure our compliance was at top level .</p>
+                    <div class="width-control">
+            
+                        <button class="btn faq-section-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ2" aria-expanded="false" aria-controls="FAQ2">
+                            Is this compliant with GDPR?
+                        </button>
+            
+                        <div class="collapse" id="FAQ2">
+                            <div class="faq-section-box-text">
+                                <p>Our data protection policies have scored full green against each ICO standard.
+                                <p>Working with local councils, we had to make sure our compliance was at top level .</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="width-control">
-                    <button class="btn faq-section-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ3" aria-expanded="false" aria-controls="FAQ3">
-                        How quickly can we on-boarded?
-                    </button>
-        
-                    <div class="collapse" id="FAQ3">
-                        <div class="faq-section-box-text">
-                            <p>It takes about 30 minutes to onboard a new venue on our platform</p>
-                            <p>An extra 2 days will be necessary for the kit to be delivered to you.</p>
+                    <div class="width-control">
+                        <button class="btn faq-section-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ3" aria-expanded="false" aria-controls="FAQ3">
+                            How quickly can we on-boarded?
+                        </button>
+            
+                        <div class="collapse" id="FAQ3">
+                            <div class="faq-section-box-text">
+                                <p>It takes about 30 minutes to onboard a new venue on our platform</p>
+                                <p>An extra 2 days will be necessary for the kit to be delivered to you.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-        </div>
+            </div>
         <!-- FAQ Section Ends -->
 
         <hr>
         <!-- Contact Us Row -->
-                <div class="container width-control">
+            <div class="container width-control">
                     <div class="row">
                         <!-- Book Call Form -->
-                        <div class="col"><button class="cta-blue"><a href="https://calendly.com/phil-og8/30min?month=2024-03" target="_blank">Book a call</a></button></div>
+                        <div class="col"><a href="https://calendly.com/phil-og8/30min?month=2024-03" target="_blank"><button class="cta-blue">Book a call</button></a></div>
                         <!-- Email Us Form -->
-                        <div class="col"><button class="cta-white">Email us</button></div>
+                        <div class="col"><a href="contact_us.html"><button class="cta-white">Email us</button></a></div>
                     </div>
-                </div>
+            </div>
 
         <!-- Contact Us Row Ends -->
 
