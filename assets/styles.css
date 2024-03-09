@@ -485,6 +485,8 @@
 
     }
 
+
+    
     /* Media Query for responsiveness when screen size is over 387px*/
     /*credits - https://stackoverflow.com/questions/26218954/crop-image-in-css */
     /*Known problem - if screen size is between >899 and <900 the image will show on repeat*/
@@ -518,7 +520,7 @@
         When reducing screen size to 387px and below, columns within rows 
         started aligning to each other instead of stacking up */
         .row {
-            display: grid;
+            display: flex;
         }
 
         /* Override display property for card-row within a .row */
