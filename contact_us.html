@@ -69,35 +69,52 @@
     <main class="body-border">
         <!-- Title -->
         <div class="d-flex justify-content-center align-items-center flex-column">
-            <h2>Just a few information from you, and we will be in touch</h2>
+            <div class="cotainer">
+                <div class="row">
+                <div class="col text-center align-items-center d-flex">
+                <div class="container">
+                    <div class="row">
+                        <h2>Just a few information from you, and we will be in touch.</h2>
+                    </div>
+                    <br>
+                    <div class="row">
+                            <h2>We always endeavour to reply within 24 hours.</h2>
+                    </div>
+                </div>
+                    
+                </div>
+                <div class="col">
+                <!-- Form -->
+                    <form method="GET" action="thank_you.html" class="center-text shadow">
 
-            <!-- Form -->
-            <form method="GET" action="https://formdump.codeinstitute.net/" class="center-text">
+                        <label for="fname">Your name</label><br>  
+                        <input type="text" id="fname" name="fname" placeholder="" class="width-control-form" required><br><br> 
 
-                <label for="fname">Your name</label><br>  
-                <input type="text" id="fname" name="fname" placeholder="" class="width-control" required><br><br> 
+                        <label for="lname">Your last name</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="" class="width-control-form" required><br><br> 
 
-                <label for="lname">Your last name</label><br>
-                <input type="text" id="lname" name="lname" placeholder="" class="width-control" required><br><br> 
+                        <label for="email">Your email address</label><br>
+                        <input type="email" id="email" name="email" placeholder="" class="width-control-form" required><br><br> 
 
-                <label for="email">Your email address</label><br>
-                <input type="email" id="email" name="email" placeholder="" class="width-control" required><br><br> 
+                        <label for="customer-type">Something about you</label><br>
+                            <select id="customer-type" class="width-control-form" name="customer-type" required>
+                                <option disabled="" selected="" value="">Select Option</option>
+                                <option value="user">I am a user.</option>
+                                <option value="local-business">I am a local business.</option>
+                                <option value="public-sector">I am work for the public sector.</option>
+                            </select><br><br> 
 
-                <label for="customer-type">Something about you</label><br>
-                    <select id="customer-type" class="width-control" name="customer-type" required>
-                        <option disabled="" selected="" value="">Select Option</option>
-                        <option value="user">I am a user.</option>
-                        <option value="local-business">I am a local business.</option>
-                        <option value="public-sector">I am work for the public sector.</option>
-                    </select><br><br> 
+                        <label for="message">A quick message</label><br>
+                        <textarea class="width-control-form" id="message" name="message" rows="9" required 
+                        aria-describedby="message-description"></textarea><br><br>
 
-                <label for="message">A quick message</label><br>
-                <textarea class="width-control" id="message" name="message" rows="9" required 
-                aria-describedby="message-description"></textarea><br><br>
-
-                <button class="cta-blue-top-section width-control" type="submit">Send</button>
-            
-            </form>
+                        <button class="cta-blue-top-section width-control" type="submit">Send</button>
+                    
+                
+                    </form>
+                </div>
+                </div>
+            </div>    
         </div>
 
 

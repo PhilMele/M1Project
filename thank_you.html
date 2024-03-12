@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doopee Doo! Welcome.</title>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Boostrap - required for carousel-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <!-- redirect site user to index page after 10 seconds -->
+    <meta http-equiv="refresh" content="10; url=index.html">
+
+ 
+ 
+</head>
+
+<body>
+
+
+    <header>
+
+        <!--Top Section -->
+            <div class="top-section bg-img-local-business" aria-label="Description of the action or content represented by the image">
+
+            <!--Navbar starts - credit boostrap https://getbootstrap.com/docs/5.3/components/navbar/-->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-background-color">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Doopee Doo!</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleBlurredSquare()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item nav-item-text">
+                                <a class="nav-link active nav-link-text" aria-current="page" href="local_business.html">Local Business</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-text" href="public_sector.html">Public Sector</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-text" href="https://www.doopeedoo.com/" target="_blank">User Platform</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+             <!--Navbar ends-->
+
+            <!--Blurred Square on top of image starts-->
+                <div class="top-image-blurred-square" id="blurredSquare">
+
+                    <!--Text-->
+                    <h1 class="top-section-text" >Thank you!</h1>
+
+                </div>
+            <!--Blurred Square on top of image ends-->
+
+        </div>
+        <!--Top Section ends -->
+        
+    </header>
+
+    <main class="body-border">
+    <p>We got your message! </p>
+    <p>You will be redirected to the main page in <b>10 seconds.</b>
+
+    <p>We endeavour to respond with 24 hours.</p>
+
+    <p>If it's urgent, you can always book a call directly with us here:</p>
+
+                        <!--Call To Action Button/Form-->
+                    <div class="container top-section-cta">
+                        <div class="row top-section-cta-row">
+                            <!-- Book Call Form -->
+                            <div class="col"><a href="https://calendly.com/phil-og8/30min?month=2024-03" target="_blank"><button class="cta-blue">Book a call</button></a></div>
+                        </div>
+                    </div>
+    
+    </main>
+
+    <!-- Footer Starts -->
+    <footer class="footer">
+        <hr class="line-middle">
+        <p class="footer-text">Find us on social media</p>
+        <div class="social-icons">
+            <!--Instagram Icon-->
+            <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram black-social"></i></a>
+            <!--Twitter Icon-->
+            <a href="https://twitter.com/?lang=en" target="_blank" title="Twitter"><i class="fab fa-twitter black-social"></i></a>
+            <!--Facebook Icon-->
+            <a href="https://en-gb.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook black-social"></i></a>
+            <!--Tiktok Icon-->
+            <a href="https://www.tiktok.com/en/" target="_blank" title="Tiktok"><i class="fab fa-tiktok black-social"></i></a>
+            <!--Youtube Icon-->
+            <a href="https://www.youtube.com/" target="_blank" title="Youtube"><i class="fab fa-youtube black-social"></i></a>
+        </div>
+        <p class="footer-text">&copy; 2024 Doopee Doo!</p>
+    </footer>
+    <!-- Footer Ends -->
+
+<script>
+
+    //Explainer: This Javascript Hides .top-image-blurred-square when .navbar-toggler is click
+    //credit(s) : many sites where consulted below are a few where inspiration was taken from
+        // this initial link showed me the basic principles but I needed more to keep my background transparent : https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+        // for .hidden : https://stackoverflow.com/questions/41213737/how-to-make-text-appear-and-disappear-when-a-div-is-clicked-on
+        // use of event listener + removing event after clicking outside of element : https://stackoverflow.com/questions/73764793/toggle-menu-if-click-outside-then-hide
+        // 
+
+    // Steps:
+        // Step 1 - in .top-image-blurred-square add id="blurredSquare" to div
+
+        // Step 2 - create 2 variables
+            var blurredSquare = document.getElementById('blurredSquare');
+            var navbarCollapse = document.querySelector('.navbar-collapse');
+
+        //Step 3 -  in .navbar-toggler add statement onclick="toggleBlurredSquare()
+        // Upon clicking on .navbar-toggler the below function activates
+
+        //Step 4 - write up functions
+            // First function
+            //This function creates the possibility to hide the element where blurredSquare is present as an ID.
+                function toggleNavbar() {
+                    blurredSquare.classList.add('hidden');
+                }
+
+
+            // Second function
+            // By activating it applies a new property to the css currently applied to .top-image-blurred-square.hidden
+            // fecth location where function 'toggleBlurredSquare' is entered, fetch relevant css class where id 'blurredSquare' is located: .top-image-blurred-square
+            // look up for .top-image-blurred-square css property with '.hidden' class and applies appointed css
+                function toggleBlurredSquare() {
+                    blurredSquare.classList.toggle('hidden');
+                }
+
+        // Handle clicks outside the navbar
+        // this evenet listener wait for a 'click' to take on various actions
+        
+        //Step 5 - Add event listeners
+            document.addEventListener('click', function (event) {
+                // event.target defines each event against their class
+                // for each of these events a variable is created: isNavbarToggler, isNavbarCollapse, isBlurredSquare
+                
+                var isNavbarToggler = event.target('.navbar-toggler');
+                var isNavbarCollapse = event.target('.navbar-collapse');
+                var isBlurredSquare = event.target('.top-image-blurred-square');
+
+                // these variables (isNavbarToggler, isNavbarCollapse, isBlurredSquare) are then used to define 
+                //what happens when a 'click' occurs on an element 
+                //that contains one of the classes targeted by event.target.closest
+
+                //this sections states that if the clicked element is not linked to 
+                //any of the variables stated above, then:
+                    //(1) navbarCollapse - which is on show - is removed
+                    //(2) blurredSquare  - which is set display: None through .top-image-blurred-square.hidden property - is removed
+                if (!isNavbarToggler && !isNavbarCollapse && !isBlurredSquare) {
+                    navbarCollapse.classList.remove('show');
+                    blurredSquare.classList.remove('hidden');
+                }
+            });
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+</body>
+</html>
+

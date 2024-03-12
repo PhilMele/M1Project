@@ -7,7 +7,7 @@
 
 /* General */
     html{
-        background: #DFDFEE;
+        background-color: #EEEEDF;
 
     }
     body {
@@ -18,6 +18,9 @@
         margin: 0 auto;
     }
 
+    .shadow{
+        padding: 10px;
+        box-shadow: 5px 10px 8px #888888;}
     h1{
         font-size: 24px;
     }
@@ -348,6 +351,10 @@
         background-size: cover;
     }
 
+/*Contact us*/
+    .width-control-form{
+        width:75%
+    }
 
 /* Media Queries */
     /*main images queries 387, 900 up to 2192px
@@ -357,6 +364,7 @@
 
      @media only screen and (min-width: 2192px) {
         /*changes image in .bg-img-local-business to fit larger screens*/
+        
         .bg-img-local-business{
         background-image: url(../assets/images/local_business/main_image/business-image-main-over-500px-compressed.webp);
         width: 100%;
