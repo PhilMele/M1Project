@@ -359,7 +359,54 @@ Content for Wireframes goes here.
 
 ## 4. Technologies <a name="tech"></a>
 
-Content for Technologies goes here.
+HTML
+The main language use through is website is HTML.
+
+CSS
+CSS is the second most used language and is instrumental in styling and controlling screen width scenarios.
+
+Bootstrap
+The Bootstrap framework is used throughout this website for layouts and styling. 
+
+Javascript
+Javascript has been used on a single occasion to customise the boostrap navbar.
+
+Font Awesome
+Font awesome Icons are used for the social icons displayed in the footer and the navbar's "burger menu" in mobile view.
+
+Google Fonts
+Google fonts are used to render the fonts.
+
+Visual Studio Code
+VS Code is the Integrated Development Environment used to develop the Website.
+
+GitHub
+GithHub is the hosting site used to store the source code for the Website and Git Pages is used for the deployment of the live site.
+
+Git
+Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.
+
+Convertia
+Used to convert .jpeg into webp images.
+
+TinyJPG
+Usedt to compress webp images to increase the performance of the site.
+
+Google Chrome Developer Tools
+Used to debug front end.
+
+Balsamiq Wireframes
+Used to create wireframes.
+
+Pixso
+Used to design wireframes.
+
+Stable Diffusion
+Used to images against prompt in Studio Ghibli Style.
+
+Imageenhan
+Used to generate Img2img Studio Ghibli Style.
+
 
 ## 5. Testing <a name="testing"></a>
 
