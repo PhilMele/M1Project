@@ -109,6 +109,16 @@
         margin: 5px; 
     }
 
+    .button{
+        display: block;
+        text-align: center;
+    }
+    
+    .contact-us{
+        display: grid;
+        text-align: center;
+    }
+
     .card{
         padding:inherit;
         margin:1px;
@@ -183,6 +193,11 @@
 
     .center-text #label-contact-us {
         text-align: left;
+    }
+
+    .contact-us-row{
+        display: flex !important;
+        text-align: center;
     }
 
 /* Navbar */
@@ -336,8 +351,6 @@
         margin: 2px;
         font-size: 11px;
     }
-    
-
 
 
 /* Public Sector Page */
@@ -355,6 +368,8 @@
     .width-control-form{
         width:75%
     }
+
+    
 
 /* Media Queries */
     /*main images queries 387, 900 up to 2192px
@@ -410,6 +425,8 @@
             background: linear-gradient(#39406370, #39406300);
         }
     }
+
+
 
     @media only screen and (min-width: 991px) and (max-width:2192px)  {
         /*changes image in .bg-img-local-business to fit larger screens*/
@@ -569,6 +586,7 @@
             height: 50%;
             top: 40%; 
         }
+
     }
 
     /* Media Query for responsiveness when screen size is 387px and under */
