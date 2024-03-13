@@ -13,7 +13,7 @@ The website covered in this ReadMe will serve as a front end window for potentia
 
 The website is fully responsive and was designed using HTML, CSS and User Centric Design modules.
 
-View the live site : Link to live site
+View the live site : https://philmele.github.io/M1Project/
 
 # Table of Contents
 
@@ -386,7 +386,7 @@ GithHub is the hosting site used to store the source code for the Website and Gi
 Git
 Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.
 
-Convertia
+Convertio
 Used to convert .jpeg into webp images.
 
 TinyJPG
@@ -410,22 +410,22 @@ Used to generate Img2img Studio Ghibli Style.
 
 ## 5. Testing <a name="testing"></a>
 
-### 5.1 Validator Testing <a name="val-testing"></a>
+   ### 5.1 Validator Testing <a name="val-testing"></a>
 
-#### 5.1.1 HTML <a name="html"></a>
-Content for HTML Validator Testing goes here.
+   #### 5.1.1 HTML <a name="html"></a>
+   Content for HTML Validator Testing goes here.
 
-#### 5.1.2 CSS <a name="css"></a>
-Content for CSS Validator Testing goes here.
+   #### 5.1.2 CSS <a name="css"></a>
+   Content for CSS Validator Testing goes here.
 
-### 5.2 Wave Testing <a name="wave-testing"></a>
-Content for Wave Testing goes here.
+   ### 5.2 Wave Testing <a name="wave-testing"></a>
+   Content for Wave Testing goes here.
 
-### 5.3 Lighthouse Testing <a name="lighthouse-testing"></a>
-Content for Lighthouse Testing goes here.
+   ### 5.3 Lighthouse Testing <a name="lighthouse-testing"></a>
+   Content for Lighthouse Testing goes here.
 
-### 5.4 User Testing <a name="user-testing"></a>
-Content for User Testing goes here.
+   ### 5.4 User Testing <a name="user-testing"></a>
+   Content for User Testing goes here.
 
 ## 6. Bugs <a name="bugs"></a>
 
@@ -433,9 +433,44 @@ Content for Bugs goes here.
 
 ## 7. Deployment <a name="deployment"></a>
 
-Content for Deployment goes here.
+Project Creation
+The project starts started by creating a folder from VS Code name `M1Project`. 
+
+Once the folder is created, click on folder to start from sratch.
+
+Local Deployment
+To copy this project, you can use git clone from your terminal.
+
+Go to the terminal and input: `git clone https://github.com/PhilMele/M1Project.git` in the directory you wish to have the project folder in.
+
+Using your code editor, such as VS Code, click on `open folder` and click on the newly created folder.
 
 ## 8. Credits <a name="credits"></a>
 
-Content for Credits goes here.
+Boostrap navbar: https://getbootstrap.com/docs/5.3/components/navbar/
+
+Making boostrap cards same color across all columns : https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-cards-the-same-height-in-card-columns
+
+Carousel section : https://stackoverflow.com/questions/75345639/bootstrap-5-multiple-cards-in-carousel
+
+FAQ Section : https://getbootstrap.com/docs/5.0/components/collapse/
+
+Javascript : These are the main sources used.
+This initial link showed me the basic principles but I needed more to keep my background transparent : https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+This code put me in the direction of creating a .hidden class in css: https://stackoverflow.com/questions/41213737/how-to-make-text-appear-and-disappear-when-a-div-is-clicked-on
+This link suggested to use event listener + removing event after clicking outside of element : https://stackoverflow.com/questions/73764793/toggle-menu-if-click-outside-then-hide
+
+Stack Overflow community for general answers regarding `Boostrap` classes and `Javascript`.
+
+Gareth Mc Girr who guided through this project, in particular to increase performance of the pages on mobile view by using WEBP formats.
+
+Images were taken from the businesses' offical websites and newspaper (Visit Caerphilly, Cadw, Transport for Wales).
+
+The processes of the images into "anime like" pictures is done through `Stable Diffusion` and `Imageehan` - a big thank you to Sonic who runs Imageehan. It's a great product.
+
+The Cards' frame template displayed in the carousels were commissioned from a UX/UI designer for the purpose of the project this website is supporting.
+
+
+
+
 
