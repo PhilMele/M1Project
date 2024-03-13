@@ -94,7 +94,7 @@
         color:#f8f8f1; 
         border:none;
         border-radius: 50px;
-        width: -webkit-fill-available;
+        width: 100%;
         padding: 10px;
         margin: 5px;
     }
@@ -104,7 +104,7 @@
         color:#329DB8;
         border:#329DB8 solid 1px;
         border-radius: 50px;
-        width: -webkit-fill-available;
+        width: 100%;
         padding: 10px; 
         margin: 5px; 
     }
