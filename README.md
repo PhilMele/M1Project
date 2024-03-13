@@ -1,7 +1,7 @@
 # Code_Institute_P1
 
 Title - Doopee Doo! front end window
-What is Doopee Doo!
+What is Doopee Doo!...?
 
 Doopee Doo! is the Pokemon Go for tourism and Travel. We take users on a quest to discover their region and what makes it unique (food, drinks and local attractions...) and collect rewards along the way. These rewards are collected with a digital loyalty card.
 
@@ -162,99 +162,104 @@ Content for Wireframes goes here.
    This javascript was built by combining many different sources, credited at the bottom of this readme.
 
    To achieve the following steps need to be taken:
-      Step 1 - in div where class `.top-image-blurred-square` is present add id="blurredSquare" to div.
-      Step 2 - At the bottom of the <body> tag open a Script element <script></script>
-      Step 3 - within this script element create 2 variables:
-         `var blurredSquare = document.getElementById('blurredSquare');
-         var navbarCollapse = document.querySelector('.navbar-collapse');`
-      Step 4 - in .navbar-toggler add statement onclick="toggleBlurredSquare(). Upon clicking on .navbar-toggler a function can activate.
-      Step 5 - write up functions.
-         First function:
-            This function creates the possibility to hide the element where blurredSquare is present as an ID.
-                     <script>
-                        function toggleNavbar() {
-                           blurredSquare.classList.add('hidden');
-                        }
-                     </script>
-         Second function
-            This function applies a new property to the css currently applied to `.top-image-blurred-square.hidden`. The function finds the location where function `toggleBlurredSquare` is entered, fetches the relevant css class where id `blurredSquare` is located which is: `.top-image-blurred-square`.
-            If this scenario is true and the function will look up for `.top-image-blurred-square` css property with `.hidden` class and applies appointed css
+   Step 1 - in div where class `.top-image-blurred-square` is present add id="blurredSquare" to div.
+   Step 2 - At the bottom of the <body> tag open a Script element <script></script>
+   Step 3 - within this script element create 2 variables:
+      `var blurredSquare = document.getElementById('blurredSquare');
+      var navbarCollapse = document.querySelector('.navbar-collapse');`
+   Step 4 - in .navbar-toggler add statement onclick="toggleBlurredSquare(). Upon clicking on .navbar-toggler a function can activate.
+   Step 5 - write up functions.
+   First function:
+      This function creates the possibility to hide the element where blurredSquare is present as an ID.
+
                   <script>
-                     function toggleBlurredSquare() {
-                        blurredSquare.classList.toggle('hidden');
-                     }
-                  </script>
-
-
-            By the end of this step the code should look at follows:
-            page.html:
-               <script>
-                  var blurredSquare = document.getElementById('blurredSquare');
-                  var navbarCollapse = document.querySelector('.navbar-collapse');
-
                      function toggleNavbar() {
                         blurredSquare.classList.add('hidden');
                      }
-                     function toggleBlurredSquare() {
-                        blurredSquare.classList.toggle('hidden');
-                     }
-               </script>
-            styles.css:
-               `/*Hides .top-image-blurred-square when navbar-toggle is clicked */
-               .top-image-blurred-square.hidden {
-                  display: none;
-               }`
-      
-      Step 6 - Once the blurred squared is hidden, the navbar can display the menu pages to the user (`class="navbar-collapse collapse show"`). However, if the user decides not to select any pages and simply wants to go back to the page's content before clicking on the navbar the blurred square will remain display:none. The next step is to create a scenario where if the user clicks somewhere that is not a clickable element of the navbar, the `.navbar-collapse` moves from `show` to `hidden`. To achieve this, and `evenListener` needs to be created. 
-         This `evenListener` will wait for a defined events to take action. On our case, if something is clicked on the page, that is not related to the navbar, then the navbar will disapear and the blurred squared will be displayed again.
+                  </script>
 
-         Start by writing the event listener and define the targeted class through a variable:
-               <script>
-
-                     document.addEventListener('click', function (event) {
-            
-                        var isNavbarToggler = event.target('.navbar-toggler');
-
-                  });
-               </script>
-         Following this, we can add the scenario that defines what happens if the click element matches the variable by adding the following code:
+      Second function
+         This function applies a new property to the css currently applied to `.top-image-blurred-square.hidden`. The function finds the location where function `toggleBlurredSquare` is entered, fetches the relevant css class where id `blurredSquare` is located which is: `.top-image-blurred-square`.
+         If this scenario is true and the function will look up for `.top-image-blurred-square` css property with `.hidden` class and applies appointed css:
 
                <script>
+                  function toggleBlurredSquare() {
+                     blurredSquare.classList.toggle('hidden');
+                  }
+               </script>
+
+
+         By the end of this step the code should look at follows:
+         page.html:
+            <script>
+               var blurredSquare = document.getElementById('blurredSquare');
+               var navbarCollapse = document.querySelector('.navbar-collapse');
+
+                  function toggleNavbar() {
+                     blurredSquare.classList.add('hidden');
+                  }
+                  function toggleBlurredSquare() {
+                     blurredSquare.classList.toggle('hidden');
+                  }
+            </script>
+         styles.css:
+            `/*Hides .top-image-blurred-square when navbar-toggle is clicked */
+            .top-image-blurred-square.hidden {
+               display: none;
+            }`
+   
+   Step 6 - Once the blurred squared is hidden, the navbar can display the menu pages to the user (`class="navbar-collapse collapse show"`). However, if the user decides not to select any pages and simply wants to go back to the page's content before clicking on the navbar the blurred square will remain display:none. The next step is to create a scenario where if the user clicks somewhere that is not a clickable element of the navbar, the `.navbar-collapse` moves from `show` to `hidden`. To achieve this, and `evenListener` needs to be created. 
+   This `evenListener` will wait for a defined events to take action. On our case, if something is clicked on the page, that is not related to the navbar, then the navbar will disapear and the blurred squared will be displayed again.
+
+   Start by writing the event listener and define the targeted class through a variable:
+            <script>
+
+                  document.addEventListener('click', function (event) {
+         
+                     var isNavbarToggler = event.target('.navbar-toggler');
+
+               });
+            </script>
+   
+   Following this, we can add the scenario that defines what happens if the click element matches the variable by adding the following code:
+
+            <script>
+               if (!isNavbarToggler) {
+                  navbarCollapse.classList.remove('show');
+                  blurredSquare.classList.remove('hidden');
+               }
+               ;
+            </script>
+
+   At the end, the javascript element should look like this:
+
+            <script>
+               var blurredSquare = document.getElementById('blurredSquare');
+               var navbarCollapse = document.querySelector('.navbar-collapse');
+
+                  function toggleNavbar() {
+                     blurredSquare.classList.add('hidden');
+                  }
+
+                  function toggleBlurredSquare() {
+                     blurredSquare.classList.toggle('hidden');
+                  }
+
+               document.addEventListener('click', function (event) {
+                  var isNavbarToggler = event.target('.navbar-toggler');
+
                   if (!isNavbarToggler) {
                      navbarCollapse.classList.remove('show');
                      blurredSquare.classList.remove('hidden');
                   }
-                  ;
-               </script>
+               });
+            </script>
 
-         At the end, the javascript element should look like this:
-               <script>
-                  var blurredSquare = document.getElementById('blurredSquare');
-                  var navbarCollapse = document.querySelector('.navbar-collapse');
-
-                     function toggleNavbar() {
-                        blurredSquare.classList.add('hidden');
-                     }
-
-                     function toggleBlurredSquare() {
-                        blurredSquare.classList.toggle('hidden');
-                     }
-
-                  document.addEventListener('click', function (event) {
-                     var isNavbarToggler = event.target('.navbar-toggler');
-
-                     if (!isNavbarToggler) {
-                        navbarCollapse.classList.remove('show');
-                        blurredSquare.classList.remove('hidden');
-                     }
-                  });
-               </script>
-
-               and css file:
-                     `/*Hides .top-image-blurred-square when navbar-toggle is clicked */
-                     .top-image-blurred-square.hidden {
-                        display: none;
-                     }`
+   and css file:
+                  `/*Hides .top-image-blurred-square when navbar-toggle is clicked */
+                  .top-image-blurred-square.hidden {
+                     display: none;
+                  }`
 
    Missing feature: would be great to have .navbar-collapse to be switched to `show` if user clicks outside the navbar. However, I could not find a way to achieve this. 
 
