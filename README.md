@@ -99,9 +99,9 @@ As a User I was re-directed to the platform by clicking on a button;
 ### 2.1 Colours <a name="colours"></a>
 The main product is aimed at promoting tourism and travel. We find that Studio Ghibli have delivered some very intersting colour palettes as part of their productions.
 
-As a result, we have used a  colour palette inspired from Studio Ghibli to promote the peace of mind of travelling and yet the excitment. This colour palette was found on Pinterest (https://www.pinterest.co.uk/pin/599189925440074430/)
+As a result, we have used a  colour palette inspired from Studio Ghibli to promote the peace of mind of travelling and yet the excitment. 
 
-![image](https://github.com/PhilMele/Code_Academy_P1/assets/105861894/9be7abfd-e233-483a-b4d9-02219b40dc7b)
+![Colour Palette](assets/images/colour_palette/colour-palette.jpg)
 
 ### 2.2 Typography <a name="typography"></a>
 Typography will follow the theme taken by the colour pallette, uses fonts that remind users of peace of mind and mysterious adventures.
@@ -278,6 +278,8 @@ Content for Wireframes goes here.
 
    ### 3.5 Footer <a name="footer"></a>
    The footer contains links to social media and company name.
+
+   The icons used are taken from Font Awesome free section.
 
    ### 3.6 Carousel <a name="gallery-page"></a>
    A boostrap carousel is used in `local_business.html` and `public_sector.html`.
@@ -460,7 +462,15 @@ Making boostrap cards same color across all columns : https://stackoverflow.com/
 
 Carousel section : https://stackoverflow.com/questions/75345639/bootstrap-5-multiple-cards-in-carousel
 
+Linear Gradient - https://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear
+
 FAQ Section : https://getbootstrap.com/docs/5.0/components/collapse/
+
+Blurred background : https://dev.to/schleidens/how-to-use-blur-background-header-image-with-text-mask-a6a 
+
+Cropping images : https://stackoverflow.com/questions/26218954/crop-image-in-css
+
+Fixed issue with background image not loading : https://stackoverflow.com/questions/21374534/css-background-image-not-loading
 
 Javascript : These are the main sources used.
 This initial link showed me the basic principles but I needed more to keep my background transparent : https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
