@@ -204,6 +204,7 @@ Content for Wireframes goes here.
                      blurredSquare.classList.toggle('hidden');
                   }
             </script>
+
          styles.css:
             `/*Hides .top-image-blurred-square when navbar-toggle is clicked */
             .top-image-blurred-square.hidden {
@@ -368,52 +369,52 @@ Content for Wireframes goes here.
 
 ## 4. Technologies <a name="tech"></a>
 
-HTML
+**HTML**
 The main language use through is website is HTML.
 
-CSS
+**CSS**
 CSS is the second most used language and is instrumental in styling and controlling screen width scenarios.
 
-Bootstrap
+**Bootstrap**
 The Bootstrap framework is used throughout this website for layouts and styling. 
 
-Javascript
+**Javascript**
 Javascript has been used on a single occasion to customise the boostrap navbar.
 
-Font Awesome
+**Font Awesome**
 Font awesome Icons are used for the social icons displayed in the footer and the navbar's "burger menu" in mobile view.
 
-Google Fonts
+**Google Fonts**
 Google fonts are used to render the fonts.
 
-Visual Studio Code
+**Visual Studio Code**
 VS Code is the Integrated Development Environment used to develop the Website.
 
-GitHub
+**GitHub**
 GithHub is the hosting site used to store the source code for the Website and Git Pages is used for the deployment of the live site.
 
-Git
+**Git**
 Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.
 
-Convertio
+**Convertio**
 Used to convert .jpeg into webp images.
 
-TinyJPG
-Usedt to compress webp images to increase the performance of the site.
+**TinyJPG**
+Used to compress webp images to increase the performance of the site.
 
-Google Chrome Developer Tools
+**Google Chrome Developer Tools**
 Used to debug front end.
 
-Balsamiq Wireframes
+**Balsamiq Wireframes**
 Used to create wireframes.
 
-Pixso
+**Pixso**
 Used to design wireframes.
 
-Stable Diffusion
+**Stable Diffusion**
 Used to images against prompt in Studio Ghibli Style.
 
-Imageenhan
+**Imageenhan**
 Used to generate Img2img Studio Ghibli Style.
 
 
@@ -422,19 +423,19 @@ Used to generate Img2img Studio Ghibli Style.
    ### 5.1 Validator Testing <a name="val-testing"></a>
 
    #### 5.1.1 HTML <a name="html"></a>
-   index.html
+   **index.html**
    ![index.html](assets/images/testing_results_images/HTML/index_html_testing.jpg)
 
-   local_business.html
+   **local_business.html**
    ![local_business.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
 
-   public_sector.html
+   **public_sector.html**
    ![public_sector.html](assets/images/testing_results_images/HTML/public_sector_html_testing.jpg)
 
-   contact_us.html
+   **contact_us.html**
    ![contact_us.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
 
-   thank_you.html
+   **thank_you.html**
    ![local_business.html](assets/images/testing_results_images/HTML/contact_us_html_testing.jpg)
 
    #### 5.1.2 CSS <a name="css"></a>
@@ -444,32 +445,32 @@ Used to generate Img2img Studio Ghibli Style.
    Content for Wave Testing goes here.
 
    ### 5.3 Lighthouse Testing <a name="lighthouse-testing"></a>
-   INDEX
+   **INDEX**
    mobile
    ![index mobile](assets/images/testing_results_images/Lighthouse/index/index_lighthouse_mobile.png)
 
    desktop
    ![index desktop](assets/images/testing_results_images/Lighthouse/index/index_lighthouse_desktop.png)
 
-   LOCAL BUSINESS
+   **LOCAL BUSINESS**
    mobile
    ![local_business mobile](assets/images/testing_results_images/Lighthouse/local_business/local_business_lighthouse_mobile.png)
 
    desktop
    ![local_business desktop](assets/images/testing_results_images/Lighthouse/local_business/local_business_lighthouse_desktop.png)
 
-   PUBLIC SECTOR
+   **PUBLIC SECTOR**
    mobile
    desktop
    ![public_sector.html](assets/images/testing_results_images/Lighthouse/public_sector/public_sector_lighthouse_desktop.png)
 
-   CONTACT US
+   **CONTACT US**
    mobile
    ![contact_us mobile](assets/images/testing_results_images/Lighthouse/contact_us/contact_us_lighthouse_mobile.png)
    desktop
    ![contact_us desktop](assets/images/testing_results_images/Lighthouse/contact_us/contact_us_lighthouse_desktop.png)
 
-   THANK YOU
+   **THANK YOU**
    mobile
    desktop
 
@@ -514,8 +515,11 @@ Cropping images : https://stackoverflow.com/questions/26218954/crop-image-in-css
 Fixed issue with background image not loading : https://stackoverflow.com/questions/21374534/css-background-image-not-loading
 
 Javascript : These are the main sources used.
+
 This initial link showed me the basic principles but I needed more to keep my background transparent : https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+
 This code put me in the direction of creating a .hidden class in css: https://stackoverflow.com/questions/41213737/how-to-make-text-appear-and-disappear-when-a-div-is-clicked-on
+
 This link suggested to use event listener + removing event after clicking outside of element : https://stackoverflow.com/questions/73764793/toggle-menu-if-click-outside-then-hide
 
 Stack Overflow community for general answers regarding `Boostrap` classes and `Javascript`.
