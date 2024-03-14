@@ -434,7 +434,7 @@ Used to generate Img2img Studio Ghibli Style.
 
 ## 6. Bugs <a name="bugs"></a>
 
-Content for Bugs goes here.
+!Important mention for contact us section.
 
 ## 7. Deployment <a name="deployment"></a>
 
