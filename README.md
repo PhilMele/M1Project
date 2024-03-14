@@ -2,7 +2,8 @@
 
 ![rendering](assets/images/responsive/dev.io-rendering.png)
 
-Title - Doopee Doo! front end window
+Title - Doopee Doo! front end window.
+
 What is Doopee Doo!...?
 
 Doopee Doo! is the Pokemon Go for tourism and Travel. We take users on a quest to discover their region and what makes it unique (food, drinks and local attractions...) and collect rewards along the way. These rewards are collected with a digital loyalty card.
@@ -70,10 +71,11 @@ Users of this page are 3 fold: (1)**Public Sector representatives** such as tour
 
 Each of this potential users will have different goals, which is why they will be prompted, as the index page to identify the purpose of their visit.
 
-Public Sector Organisations: these organisations are varied. Currently we are reciving interest from tourism boards and public transport (Transport for Wales). Their goals browsing through this website will be to understand the benefits of our product and find a way to get in touch.
-Managers and Owners of Local Independent Shops: Typical customers are independent food, drinks and coffee shops. Just like Public Sector Organisation, the goal of these users will be to understand the benefits of the product and find a way to get in touch with us. However, some of the benefits will be different from Public Sector Organisations, which is why the two will be seperated.
+**Public Sector Organisations**: these organisations are varied. Currently we are reciving interest from tourism boards and public transport (Transport for Wales). Their goals browsing through this website will be to understand the benefits of our product and find a way to get in touch.
 
-People (Users): these are users of the platform for whom the platform is free to access. Therefore, their goal visiting this website will simply to be redirected to the actual platform.
+**Managers and Owners of Local Independent Shops**: Typical customers are independent food, drinks and coffee shops. Just like Public Sector Organisation, the goal of these users will be to understand the benefits of the product and find a way to get in touch with us. However, some of the benefits will be different from Public Sector Organisations, which is why the two will be seperated.
+
+**People (Users)**: these are users of the platform for whom the platform is free to access. Therefore, their goal visiting this website will simply to be redirected to the actual platform.
 
 #### 1.1.2 Site Owner Goals <a name="site-owner-goals"></a>
 As the site owner, our goal is to convert prospects into lead.
@@ -127,13 +129,13 @@ These icons are used for `local_business.html' and 'public_sector.html' to displ
    #### 2.3.2 Imagees <a name="images"></a>
 Images are of 3 sorts:
 
-First set of images are used in the index page. These images are used as buttons for the site visitor to identify themselves and what they are looking for. These images can be found at: `assets\images\index`
+**First set of images** are used in the index page. These images are used as buttons for the site visitor to identify themselves and what they are looking for. These images can be found at: `assets\images\index`
 
-Second Set of images are used as background image in the Top Section of the other pages: local_business.html(`assets\images\local_business\main_image`), public_sector.html(`assets\images\public_sector\main_image`), contact_us.html (reusing: `assets\images\local_business\main_image`) and thank_you.html (reusing: `assets\images\local_business\main_image`).
+**Second set of images** are used as background image in the Top Section of the other pages: local_business.html(`assets\images\local_business\main_image`), public_sector.html(`assets\images\public_sector\main_image`), contact_us.html (reusing: `assets\images\local_business\main_image`) and thank_you.html (reusing: `assets\images\local_business\main_image`).
 
-**Note**: these images exist in 2 versions (under and over 500px). These two version were created to adapt to screen width and performance requirements between mobile and desktop version. These images are switched automatically upon reaching a certain screen size width (500px) through media queries which can be found in : `assets\styles.css`
+   **Note**: these images exist in 2 versions (under and over 500px). These two version were created to adapt to screen width and performance requirements between mobile and desktop version. These images are switched automatically upon reaching a certain screen size width (500px) through media queries which can be found in : `assets\styles.css`
 
-3rd set of images are the cards displaying current customers identify: name, logo and image of the venue.
+**Third set of images** are the cards displaying current customers identify: name, logo and image of the venue.
 
 All these images have been converted to .webp and compressed to improve performan}ce of site and lighthouse scoring.
 
@@ -156,7 +158,7 @@ Content for Wireframes goes here.
 
    The header also comes with some styling to garantee navbar and the logo are visible independently of the background image present. To achieve this `.navbar-background-color` is created in the css file applying a dark background. To make sure the transition between the dark background and the background images is made smoothly, `linear-background` is added as the property instead of `background-color`.
 
-   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+      **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
    ### 3.3 Navigation Bar <a name="nav-bar"></a>
    In order to achieve the desired design outcome, the blurred square has to disapear when site user click on .navbar-collapse.
@@ -166,13 +168,16 @@ Content for Wireframes goes here.
    This javascript was built by combining many different sources, credited at the bottom of this readme.
 
    To achieve the following steps need to be taken:
-   Step 1 - in div where class `.top-image-blurred-square` is present add id="blurredSquare" to div.
-   Step 2 - At the bottom of the <body> tag open a Script element <script></script>
-   Step 3 - within this script element create 2 variables:
+   
+   **Step 1-** in div where class `.top-image-blurred-square` is present add id="blurredSquare" to div.
+
+   **Step 2 -** At the bottom of the <body> tag open a Script element <script></script>
+
+   **Step 3 -** within this script element create 2 variables:
       `var blurredSquare = document.getElementById('blurredSquare');
       var navbarCollapse = document.querySelector('.navbar-collapse');`
-   Step 4 - in .navbar-toggler add statement onclick="toggleBlurredSquare(). Upon clicking on .navbar-toggler a function can activate.
-   Step 5 - write up functions.
+   **Step 4 -** in .navbar-toggler add statement onclick="toggleBlurredSquare(). Upon clicking on .navbar-toggler a function can activate.
+   **Step 5 -** write up functions.
    First function:
       This function creates the possibility to hide the element where blurredSquare is present as an ID.
 
@@ -194,7 +199,7 @@ Content for Wireframes goes here.
 
 
    By the end of this step the code should look at follows:
-   page.html:
+   
             <script>
                var blurredSquare = document.getElementById('blurredSquare');
                var navbarCollapse = document.querySelector('.navbar-collapse');
@@ -213,10 +218,11 @@ Content for Wireframes goes here.
                display: none;
             }`
    
-   Step 6 - Once the blurred squared is hidden, the navbar can display the menu pages to the user (`class="navbar-collapse collapse show"`). However, if the user decides not to select any pages and simply wants to go back to the page's content before clicking on the navbar the blurred square will remain display:none. The next step is to create a scenario where if the user clicks somewhere that is not a clickable element of the navbar, the `.navbar-collapse` moves from `show` to `hidden`. To achieve this, and `evenListener` needs to be created. 
+   **Step 6 -** Once the blurred squared is hidden, the navbar can display the menu pages to the user (`class="navbar-collapse collapse show"`). However, if the user decides not to select any pages and simply wants to go back to the page's content before clicking on the navbar the blurred square will remain display:none. The next step is to create a scenario where if the user clicks somewhere that is not a clickable element of the navbar, the `.navbar-collapse` moves from `show` to `hidden`. To achieve this, and `evenListener` needs to be created. 
    This `evenListener` will wait for a defined events to take action. On our case, if something is clicked on the page, that is not related to the navbar, then the navbar will disapear and the blurred squared will be displayed again.
 
    Start by writing the event listener and define the targeted class through a variable:
+   
             <script>
 
                   document.addEventListener('click', function (event) {
@@ -266,7 +272,7 @@ Content for Wireframes goes here.
                      display: none;
                   }`
 
-   Missing feature: would be great to have .navbar-collapse to be switched to `show` if user clicks outside the navbar. However, I could not find a way to achieve this. 
+   **Missing feature**: would be great to have .navbar-collapse to be switched to `show` if user clicks outside the navbar. However, I could not find a way to achieve this. 
 
    ### 3.4 Box Section <a name="box-section"></a>
    Box sections represent content displayed on `local.business.html` and `public_sector.html` as part of the "Benefits" section.
@@ -291,7 +297,7 @@ Content for Wireframes goes here.
 
    Addition boostrap classes are such as `data-bs-ride` and `slide`, allowing the carousel to images. `data-bs-ride` is important as without it images would outgrow their container during the "slide" phase to then resize to their desired shape. This is astetically not pleasing and `data-bs-ride` solved this problem.
 
-   Missing feature: when going to screen above 769px, the carousel container is no longer set to a width of 100%. As a result, we can see the 6 images being displayed at once during the "slide" transition. I did not find a way to only display 3 at once. 
+   **Missing feature**: when going to screen above 769px, the carousel container is no longer set to a width of 100%. As a result, we can see the 6 images being displayed at once during the "slide" transition. I did not find a way to only display 3 at once. 
 
    ### 3.7 Contact Us Form <a name="contact-us-form"></a>
    This form can be reached a site user clicks on a "Send Email" button.
@@ -308,7 +314,7 @@ Content for Wireframes goes here.
 
    This addition redirects the user back to index.html after 10 seconds. To extend or reduce the timeframe `10` can be edited as deemed appropriate. Url can also be changed for to another page.
 
-   **Note**: `.width-control-form` is used in the form fields instead of the form element. For some reason, having `.width-control-form` in the <form> element or any <div> above seem to center the field to the left, and not the center of the screen. The solution is not elegant, as the class is repeated but this is the solution we found to the "centering" problem.
+      **Note**: `.width-control-form` is used in the form fields instead of the form element. For some reason, having `.width-control-form` in the <form> element or any <div> above seem to center the field to the left, and not the center of the screen. The solution is not elegant, as the class is repeated but this is the solution we found to the "centering" problem.
 
    Please note the used of `.hide-button` in the "Email us" buttons in the Box Section area (`local_business.html` and `public_sector.html`). This class turns display to `None` when the screen reaches a 769px. This is handled through a media query.
 
@@ -440,24 +446,24 @@ Used to generate first image in Readme file rendering site in different format.
 
    ![local_business.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
 
-   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+      **Note**: the `<div>` element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
    **public_sector.html**
 
    ![public_sector.html](assets/images/testing_results_images/HTML/public_sector_html_testing.jpg)
 
-   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+      **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
    **contact_us.html**
 
    ![contact_us.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
    
-   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
-   **thank_you.html**
+      **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+      **thank_you.html**
 
    ![local_business.html](assets/images/testing_results_images/HTML/contact_us_html_testing.jpg)
    
-   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+      **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
    #### 5.1.2 CSS <a name="css"></a>
    ![CSS Testing](assets/images/testing_results_images/CSS/styles.css_css_testing.jpg)
