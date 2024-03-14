@@ -154,6 +154,8 @@ Content for Wireframes goes here.
 
    The header also comes with some styling to garantee navbar and the logo are visible independently of the background image present. To achieve this `.navbar-background-color` is created in the css file applying a dark background. To make sure the transition between the dark background and the background images is made smoothly, `linear-background` is added as the property instead of `background-color`.
 
+   Note the <div> element where `bg-img-local-business` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+
    ### 3.3 Navigation Bar <a name="nav-bar"></a>
    In order to achieve the desired design outcome, the blurred square has to disapear when site user click on .navbar-collapse.
 
