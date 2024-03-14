@@ -180,9 +180,9 @@ Content for Wireframes goes here.
                      }
                   </script>
 
-      Second function
-         This function applies a new property to the css currently applied to `.top-image-blurred-square.hidden`. The function finds the location where function `toggleBlurredSquare` is entered, fetches the relevant css class where id `blurredSquare` is located which is: `.top-image-blurred-square`.
-         If this scenario is true and the function will look up for `.top-image-blurred-square` css property with `.hidden` class and applies appointed css:
+   Second function
+   This function applies a new property to the css currently applied to `.top-image-blurred-square.hidden`. The function finds the location where function `toggleBlurredSquare` is entered, fetches the relevant css class where id `blurredSquare` is located which is: `.top-image-blurred-square`.
+   If this scenario is true and the function will look up for `.top-image-blurred-square` css property with `.hidden` class and applies appointed css:
 
                <script>
                   function toggleBlurredSquare() {
@@ -191,8 +191,8 @@ Content for Wireframes goes here.
                </script>
 
 
-         By the end of this step the code should look at follows:
-         page.html:
+   By the end of this step the code should look at follows:
+   page.html:
             <script>
                var blurredSquare = document.getElementById('blurredSquare');
                var navbarCollapse = document.querySelector('.navbar-collapse');
@@ -422,16 +422,57 @@ Used to generate Img2img Studio Ghibli Style.
    ### 5.1 Validator Testing <a name="val-testing"></a>
 
    #### 5.1.1 HTML <a name="html"></a>
-   Content for HTML Validator Testing goes here.
+   index.html
+   ![index.html](assets/images/testing_results_images/HTML/index_html_testing.jpg)
+
+   local_business.html
+   ![local_business.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
+
+   public_sector.html
+   ![public_sector.html](assets/images/testing_results_images/HTML/public_sector_html_testing.jpg)
+
+   contact_us.html
+   ![contact_us.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
+
+   thank_you.html
+   ![local_business.html](assets/images/testing_results_images/HTML/contact_us_html_testing.jpg)
 
    #### 5.1.2 CSS <a name="css"></a>
-   Content for CSS Validator Testing goes here.
+   ![CSS Testing](assets/images/testing_results_images/CSS/styles.css_css_testing.jpg)
 
    ### 5.2 Wave Testing <a name="wave-testing"></a>
    Content for Wave Testing goes here.
 
    ### 5.3 Lighthouse Testing <a name="lighthouse-testing"></a>
-   Content for Lighthouse Testing goes here.
+   INDEX
+   mobile
+   ![index mobile](assets/images/testing_results_images/Lighthouse/index/index_lighthouse_mobile.png)
+
+   desktop
+   ![index desktop](assets/images/testing_results_images/Lighthouse/index/index_lighthouse_desktop.png)
+
+   LOCAL BUSINESS
+   mobile
+   ![local_business mobile](assets/images/testing_results_images/Lighthouse/local_business/local_business_lighthouse_mobile.png)
+
+   desktop
+   ![local_business desktop](assets/images/testing_results_images/Lighthouse/local_business/local_business_lighthouse_desktop.png)
+
+   PUBLIC SECTOR
+   mobile
+   desktop
+   ![public_sector.html](assets/images/testing_results_images/Lighthouse/public_sector/public_sector_lighthouse_desktop.png)
+
+   CONTACT US
+   mobile
+   ![contact_us mobile](assets/images/testing_results_images/Lighthouse/contact_us/contact_us_lighthouse_mobile.png)
+   desktop
+   ![contact_us desktop](assets/images/testing_results_images/Lighthouse/contact_us/contact_us_lighthouse_desktop.png)
+
+   THANK YOU
+   mobile
+   desktop
+
 
    ### 5.4 User Testing <a name="user-testing"></a>
    Content for User Testing goes here.

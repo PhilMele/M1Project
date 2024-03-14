@@ -186,11 +186,6 @@
         color: inherit;
     }
 
-    /* this didnt work. so I used an ID instead
-    .center-text label {
-        text-align: left !important;
-    }*/
-
     .center-text #label-contact-us {
         text-align: left;
     }
