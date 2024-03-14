@@ -1,5 +1,7 @@
 # Code_Institute_P1
 
+![rendering](assets/images/responsive/dev.io-rendering.png)
+
 Title - Doopee Doo! front end window
 What is Doopee Doo!...?
 
@@ -64,7 +66,7 @@ View the live site : https://philmele.github.io/M1Project/
 ### 1.1 Project Goals <a name="project-goals"></a>
 
 #### 1.1.1 User Goals & Expectations <a name="user-goals"></a>
-Users of this page are 3 fold: (1)Public Sector representatives such as tourism boards and (2)owners or managers of local independent shops (coffee, food and drinks). (3)A third type of users could be actual users (people) of the digital loyalty card.
+Users of this page are 3 fold: (1)**Public Sector representatives** such as tourism boards and (2)owners or managers of **local independent shops** (coffee, food and drinks). (3)A third type of users could be actual **users (people) of the digital loyalty card**.
 
 Each of this potential users will have different goals, which is why they will be prompted, as the index page to identify the purpose of their visit.
 
@@ -125,11 +127,11 @@ These icons are used for `local_business.html' and 'public_sector.html' to displ
    #### 2.3.2 Imagees <a name="images"></a>
 Images are of 3 sorts:
 
-1st Set of images are used in the index page. These images are used as buttons for the site visitor to identify themselves and what they are looking for. These images can be found at: `assets\images\index`
+First set of images are used in the index page. These images are used as buttons for the site visitor to identify themselves and what they are looking for. These images can be found at: `assets\images\index`
 
-2nd Set of images are used as background image in the Top Section of the other pages: local_business.html(`assets\images\local_business\main_image`), public_sector.html(`assets\images\public_sector\main_image`), contact_us.html (reusing: `assets\images\local_business\main_image`) and thank_you.html (reusing: `assets\images\local_business\main_image`).
+Second Set of images are used as background image in the Top Section of the other pages: local_business.html(`assets\images\local_business\main_image`), public_sector.html(`assets\images\public_sector\main_image`), contact_us.html (reusing: `assets\images\local_business\main_image`) and thank_you.html (reusing: `assets\images\local_business\main_image`).
 
-Note: these images exist in 2 versions (under and over 500px). These two version were created to adapt to screen width and performance requirements between mobile and desktop version. These images are switched automatically upon reaching a certain screen size width (500px) through media queries which can be found in : `assets\styles.css`
+**Note**: these images exist in 2 versions (under and over 500px). These two version were created to adapt to screen width and performance requirements between mobile and desktop version. These images are switched automatically upon reaching a certain screen size width (500px) through media queries which can be found in : `assets\styles.css`
 
 3rd set of images are the cards displaying current customers identify: name, logo and image of the venue.
 
@@ -154,7 +156,7 @@ Content for Wireframes goes here.
 
    The header also comes with some styling to garantee navbar and the logo are visible independently of the background image present. To achieve this `.navbar-background-color` is created in the css file applying a dark background. To make sure the transition between the dark background and the background images is made smoothly, `linear-background` is added as the property instead of `background-color`.
 
-   Note: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
    ### 3.3 Navigation Bar <a name="nav-bar"></a>
    In order to achieve the desired design outcome, the blurred square has to disapear when site user click on .navbar-collapse.
@@ -306,7 +308,7 @@ Content for Wireframes goes here.
 
    This addition redirects the user back to index.html after 10 seconds. To extend or reduce the timeframe `10` can be edited as deemed appropriate. Url can also be changed for to another page.
 
-   Note: `.width-control-form` is used in the form fields instead of the form element. For some reason, having `.width-control-form` in the <form> element or any <div> above seem to center the field to the left, and not the center of the screen. The solution is not elegant, as the class is repeated but this is the solution we found to the "centering" problem.
+   **Note**: `.width-control-form` is used in the form fields instead of the form element. For some reason, having `.width-control-form` in the <form> element or any <div> above seem to center the field to the left, and not the center of the screen. The solution is not elegant, as the class is repeated but this is the solution we found to the "centering" problem.
 
    Please note the used of `.hide-button` in the "Email us" buttons in the Box Section area (`local_business.html` and `public_sector.html`). This class turns display to `None` when the screen reaches a 769px. This is handled through a media query.
 
@@ -344,7 +346,11 @@ Content for Wireframes goes here.
 
    By using boostrap rows and columns, the idea is have the rows displayed at full lenght until the screen resolution doesn't allow it anymore, after which all rows and columns stack on top of each other.
 
-   Consideration for responsivness for the boostrap rows: In addition `.row` is also overwritten in the css file to to display as `grid` as a media query. Failing this, when reaching 387px the two columns within the second row would start aligning next to each other instead of stacking up. This media query fixes this problem.
+   Consideration for responsivness for the boostrap rows: In addition `.row` is also overwritten in the css file to to display as `grid` as a media query. This is done through `row-index`.
+
+   It is important to no give this attribute to the `.row`, it it will create an error in the display at 678px for other pages (`local_business.html` and public_sector.html`).
+   
+   Failing this, when reaching 387px the two columns within the second row would start aligning next to each other instead of stacking up. This media query fixes this problem.
    
    Consideration for responsivness images: To make the images responsive, and allow them to reduce when the screen size is less than the width of the images, class `.index-main-audience` regulates the size of the images for screen between 320 and 387px in a media query.
 
@@ -417,26 +423,41 @@ Used to images against prompt in Studio Ghibli Style.
 **Imageenhan**
 Used to generate Img2img Studio Ghibli Style.
 
+**ui.dev**
+Used to generate first image in Readme file rendering site in different format.
 
 ## 5. Testing <a name="testing"></a>
 
    ### 5.1 Validator Testing <a name="val-testing"></a>
 
    #### 5.1.1 HTML <a name="html"></a>
+
    **index.html**
+
    ![index.html](assets/images/testing_results_images/HTML/index_html_testing.jpg)
 
    **local_business.html**
+
    ![local_business.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
 
+   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+
    **public_sector.html**
+
    ![public_sector.html](assets/images/testing_results_images/HTML/public_sector_html_testing.jpg)
 
-   **contact_us.html**
-   ![contact_us.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
+   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
+   **contact_us.html**
+
+   ![contact_us.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
+   
+   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
    **thank_you.html**
+
    ![local_business.html](assets/images/testing_results_images/HTML/contact_us_html_testing.jpg)
+   
+   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
    #### 5.1.2 CSS <a name="css"></a>
    ![CSS Testing](assets/images/testing_results_images/CSS/styles.css_css_testing.jpg)
@@ -461,12 +482,14 @@ Used to generate Img2img Studio Ghibli Style.
 
    **PUBLIC SECTOR**
    mobile
+
    desktop
    ![public_sector.html](assets/images/testing_results_images/Lighthouse/public_sector/public_sector_lighthouse_desktop.png)
 
    **CONTACT US**
    mobile
    ![contact_us mobile](assets/images/testing_results_images/Lighthouse/contact_us/contact_us_lighthouse_mobile.png)
+
    desktop
    ![contact_us desktop](assets/images/testing_results_images/Lighthouse/contact_us/contact_us_lighthouse_desktop.png)
 
@@ -484,12 +507,12 @@ Used to generate Img2img Studio Ghibli Style.
 
 ## 7. Deployment <a name="deployment"></a>
 
-Project Creation
+**Project Creation**
 The project starts started by creating a folder from VS Code name `M1Project`. 
 
 Once the folder is created, click on folder to start from sratch.
 
-Local Deployment
+**Local Deployment**
 To copy this project, you can use git clone from your terminal.
 
 Go to the terminal and input: `git clone https://github.com/PhilMele/M1Project.git` in the directory you wish to have the project folder in.
@@ -498,29 +521,31 @@ Using your code editor, such as VS Code, click on `open folder` and click on the
 
 ## 8. Credits <a name="credits"></a>
 
-Boostrap navbar: https://getbootstrap.com/docs/5.3/components/navbar/
+**Boostrap navbar**: https://getbootstrap.com/docs/5.3/components/navbar/
 
-Making boostrap cards same color across all columns : https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-cards-the-same-height-in-card-columns
+**Making boostrap cards same color across all columns** : https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-cards-the-same-height-in-card-columns
 
-Carousel section : https://stackoverflow.com/questions/75345639/bootstrap-5-multiple-cards-in-carousel
+**Carousel section **: https://stackoverflow.com/questions/75345639/bootstrap-5-multiple-cards-in-carousel
 
-Linear Gradient - https://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear
+**Linear Gradient** - https://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear
 
-FAQ Section : https://getbootstrap.com/docs/5.0/components/collapse/
+**FAQ Section** : https://getbootstrap.com/docs/5.0/components/collapse/
 
-Blurred background : https://dev.to/schleidens/how-to-use-blur-background-header-image-with-text-mask-a6a 
+**Blurred background** : https://dev.to/schleidens/how-to-use-blur-background-header-image-with-text-mask-a6a 
 
-Cropping images : https://stackoverflow.com/questions/26218954/crop-image-in-css
+**Cropping images** : https://stackoverflow.com/questions/26218954/crop-image-in-css
 
-Fixed issue with background image not loading : https://stackoverflow.com/questions/21374534/css-background-image-not-loading
+**Fixed issue with background image not loading** : https://stackoverflow.com/questions/21374534/css-background-image-not-loading
 
-Javascript : These are the main sources used.
+**Javascript** : These are the main sources used.
 
 This initial link showed me the basic principles but I needed more to keep my background transparent : https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
 This code put me in the direction of creating a .hidden class in css: https://stackoverflow.com/questions/41213737/how-to-make-text-appear-and-disappear-when-a-div-is-clicked-on
 
 This link suggested to use event listener + removing event after clicking outside of element : https://stackoverflow.com/questions/73764793/toggle-menu-if-click-outside-then-hide
+
+**ui.dev** : renders responsivness in different formats:  https://ui.dev/amiresponsive
 
 Stack Overflow community for general answers regarding `Boostrap` classes and `Javascript`.
 

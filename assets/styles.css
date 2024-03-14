@@ -565,7 +565,7 @@
         /* Overrides boostrap row from display "flex" to "grid". 
         When reducing screen size to 387px and below, columns within rows 
         started aligning to each other instead of stacking up */
-        .row {
+        .row-index {
             display: grid;
         }
 
