@@ -38,7 +38,7 @@ View the live site : https://philmele.github.io/M1Project/
    - [Wireframes](#wireframes)
 
 3. [Features](#features)
-   - [Capped Max Screen Resolution] (#max-screen)
+   - [Capped Max Screen Resolution](#max-screen)
    - [Header](#header)
    - [Navigation Bar](#nav-bar)
    - [Box Section](#box-section)
@@ -170,7 +170,7 @@ All these images have been converted to .webp and compressed to improve performa
 
    The header also comes with some styling to garantee navbar and the logo are visible independently of the background image present. To achieve this `.navbar-background-color` is created in the css file applying a dark background. To make sure the transition between the dark background and the background images is made smoothly, `linear-background` is added as the property instead of `background-color`.
 
-   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+   **Note**: the `<div>` element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
    ### 3.3 Navigation Bar <a name="nav-bar"></a>
    In order to achieve the desired design outcome, the blurred square has to disapear when site user click on .navbar-collapse.
@@ -284,10 +284,11 @@ All these images have been converted to .webp and compressed to improve performa
             </script>
 
    and css file:
-                  `/*Hides .top-image-blurred-square when navbar-toggle is clicked */
-                  .top-image-blurred-square.hidden {
-                     display: none;
-                  }`
+
+            /*Hides .top-image-blurred-square when navbar-toggle is clicked */
+            .top-image-blurred-square.hidden {
+               display: none;
+            }
 
    **Missing feature**: would be great to have .navbar-collapse to be switched to `show` if user clicks outside the navbar. However, I could not find a way to achieve this. 
 
@@ -439,14 +440,15 @@ All these images have been converted to .webp and compressed to improve performa
    ### 5.1 Validator Testing <a name="val-testing"></a>
 
    #### 5.1.1 HTML <a name="html"></a>
-
-   **index.html**
-
-   ![index.html](assets/images/testing_results_images/HTML/index_html_testing.jpg)
+   <details>
+      <summary>**index.html**</summary>
+      <b>![local_business.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)</b>
+   </details>
+   
 
    **local_business.html**
 
-   ![local_business.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
+   
 
    **Note**: the `<div>` element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
@@ -454,19 +456,19 @@ All these images have been converted to .webp and compressed to improve performa
 
    ![public_sector.html](assets/images/testing_results_images/HTML/public_sector_html_testing.jpg)
 
-   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+   **Note**: the `<div>` element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
    **contact_us.html**
 
    ![contact_us.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
    
-   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+   **Note**: the `<div>` element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
    
    **thank_you.html**
 
    ![thank_you.html](xx)
    
-   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+   **Note**: the `<div>` element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
    #### 5.1.2 CSS <a name="css"></a>
    ![CSS Testing](assets/images/testing_results_images/CSS/styles.css_css_testing.jpg)
@@ -476,33 +478,45 @@ All these images have been converted to .webp and compressed to improve performa
 
    ### 5.3 Lighthouse Testing <a name="lighthouse-testing"></a>
    **INDEX**
+
    mobile
+
    ![index mobile](assets/images/testing_results_images/Lighthouse/index/index_lighthouse_mobile.png)
 
    desktop
+
    ![index desktop](assets/images/testing_results_images/Lighthouse/index/index_lighthouse_desktop.png)
 
    **LOCAL BUSINESS**
+
    mobile
+
    ![local_business mobile](assets/images/testing_results_images/Lighthouse/local_business/local_business_lighthouse_mobile.png)
 
    desktop
+
    ![local_business desktop](assets/images/testing_results_images/Lighthouse/local_business/local_business_lighthouse_desktop.png)
 
    **PUBLIC SECTOR**
+
    mobile
 
    desktop
+
    ![public_sector.html](assets/images/testing_results_images/Lighthouse/public_sector/public_sector_lighthouse_desktop.png)
 
    **CONTACT US**
+
    mobile
+
    ![contact_us mobile](assets/images/testing_results_images/Lighthouse/contact_us/contact_us_lighthouse_mobile.png)
 
    desktop
+
    ![contact_us desktop](assets/images/testing_results_images/Lighthouse/contact_us/contact_us_lighthouse_desktop.png)
 
    **THANK YOU**
+
   mobile
 
    ![thank_you mobile](assets/images/testing_results_images/Lighthouse/thank_you/thank_you_lighthouse_mobile.png)
