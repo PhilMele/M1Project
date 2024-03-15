@@ -461,9 +461,10 @@ All these images have been converted to .webp and compressed to improve performa
    ![contact_us.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
    
    **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
-      **thank_you.html**
+   
+   **thank_you.html**
 
-   ![local_business.html](assets/images/testing_results_images/HTML/contact_us_html_testing.jpg)
+   ![thank_you.html](xx)
    
    **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
@@ -502,8 +503,13 @@ All these images have been converted to .webp and compressed to improve performa
    ![contact_us desktop](assets/images/testing_results_images/Lighthouse/contact_us/contact_us_lighthouse_desktop.png)
 
    **THANK YOU**
-   mobile
+  mobile
+
+   ![thank_you mobile](assets/images/testing_results_images/Lighthouse/thank_you/thank_you_lighthouse_mobile.png)
+
    desktop
+
+   ![thank_you mobile](assets/images/testing_results_images/Lighthouse/thank_you/thank_you_lighthouse_desktop.png)
 
 
    ### 5.4 User Testing <a name="user-testing"></a>
