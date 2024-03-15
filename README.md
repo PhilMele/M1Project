@@ -488,60 +488,80 @@ All these images have been converted to .webp and compressed to improve performa
    </details>
 
    #### 5.1.2 CSS <a name="css"></a>
-   ![CSS Testing](assets/images/testing_results_images/CSS/styles.css_css_testing.jpg)
+   <details>
+      <summary>CSS Testing</summary>
+      <p>
+         <img src="assets/images/testing_results_images/CSS/styles.css_css_testing.jpg" alt="styles.css" />
+      </p>
+   </details>
 
    ### 5.2 Wave Testing <a name="wave-testing"></a>
    Content for Wave Testing goes here.
 
    ### 5.3 Lighthouse Testing <a name="lighthouse-testing"></a>
    **INDEX**
+   <details>
+      <summary>INDEX</summary>
+      <p>
+         <h3>Mobile</h3>
+         <img src="assets/images/testing_results_images/Lighthouse/index/index_lighthouse_mobile.png" alt="index mobile" />
+      </p>
+      <p>
+         <h3>Desktop</h3>
+         <img src="assets/images/testing_results_images/Lighthouse/index/index_lighthouse_desktop.png" alt="index desktop" />
+      </p>
+   </details>
 
-   mobile
 
-   ![index mobile](assets/images/testing_results_images/Lighthouse/index/index_lighthouse_mobile.png)
 
-   desktop
+   <details>
+      <summary>LOCAL BUSINESS</summary>
+      <p>
+         <h3>Mobile</h3>
+         <img src="assets/images/testing_results_images/Lighthouse/local_business/local_business_lighthouse_mobile.png" alt="local business mobile" />
+      </p>
+      <p>
+         <h3>Desktop</h3>
+         <img src="assets/images/testing_results_images/Lighthouse/local_business/local_business_lighthouse_desktop.png" alt="local_business desktop" />
+      </p>
+   </details>
 
-   ![index desktop](assets/images/testing_results_images/Lighthouse/index/index_lighthouse_desktop.png)
 
-   **LOCAL BUSINESS**
+   <details>
+      <summary>PUBLIC SECTOR</summary>
+      <p>
+         <h3>Mobile</h3>
+         <img src="" alt="local business mobile" />
+      </p>
+      <p>
+         <h3>Desktop</h3>
+         <img src="assets/images/testing_results_images/Lighthouse/public_sector/public_sector_lighthouse_desktop.png" alt="public_sector.html"/>
+      </p>
+   </details>
 
-   mobile
+   <details>
+      <summary>CONTACT US</summary>
+      <p>
+         <h3>Mobile</h3>
+         <img src="assets/images/testing_results_images/Lighthouse/contact_us/contact_us_lighthouse_mobile.png" alt="contact_us mobile" />
+      </p>
+      <p>
+         <h3>Desktop</h3>
+         <img src="assets/images/testing_results_images/Lighthouse/contact_us/contact_us_lighthouse_desktop.png" alt="contact_us desktop"/>
+      </p>
+   </details>
 
-   ![local_business mobile](assets/images/testing_results_images/Lighthouse/local_business/local_business_lighthouse_mobile.png)
-
-   desktop
-
-   ![local_business desktop](assets/images/testing_results_images/Lighthouse/local_business/local_business_lighthouse_desktop.png)
-
-   **PUBLIC SECTOR**
-
-   mobile
-
-   desktop
-
-   ![public_sector.html](assets/images/testing_results_images/Lighthouse/public_sector/public_sector_lighthouse_desktop.png)
-
-   **CONTACT US**
-
-   mobile
-
-   ![contact_us mobile](assets/images/testing_results_images/Lighthouse/contact_us/contact_us_lighthouse_mobile.png)
-
-   desktop
-
-   ![contact_us desktop](assets/images/testing_results_images/Lighthouse/contact_us/contact_us_lighthouse_desktop.png)
-
-   **THANK YOU**
-
-  mobile
-
-   ![thank_you mobile](assets/images/testing_results_images/Lighthouse/thank_you/thank_you_lighthouse_mobile.png)
-
-   desktop
-
-   ![thank_you mobile](assets/images/testing_results_images/Lighthouse/thank_you/thank_you_lighthouse_desktop.png)
-
+   <details>
+      <summary>CONTACT US</summary>
+      <p>
+         <h3>Mobile</h3>
+         <img src="assets/images/testing_results_images/Lighthouse/thank_you/thank_you_lighthouse_mobile.png" alt="thank_you mobile" />
+      </p>
+      <p>
+         <h3>Desktop</h3>
+         <img src="assets/images/testing_results_images/Lighthouse/thank_you/thank_you_lighthouse_desktop.png" alt="thank_you desktop"/>
+      </p>
+   </details>
 
    ### 5.4 User Testing <a name="user-testing"></a>
    Content for User Testing goes here.
