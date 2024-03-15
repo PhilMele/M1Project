@@ -465,8 +465,12 @@ All these images have been converted to .webp and compressed to improve performa
 
    <details>
       <summary>thank_you.html</summary>
-      ![thank_you.html](assets/images/testing_results_images/HTML/thank_you_html_testing.jpg)
-      **Note**: the `<div>` element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+      <p>
+         <img src="assets/images/testing_results_images/HTML/thank_you_html_testing.jpg" alt="thank_you.html" />
+      </p>
+      <p>
+         <b>Note:</b> the <code>&lt;div&gt;</code> element where <code>bg-img-local-business</code> and <code>bg-img-public sector</code> contains an <code>aria-label="..."</code>. <code>Nu Html Checker</code> will flag it as a warning. Despite the warning, we left it as is, as it allows for a description of the picture, since the image link is handled in the CSS file.
+      </p>
    </details>
 
    #### 5.1.2 CSS <a name="css"></a>
