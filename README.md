@@ -149,7 +149,10 @@ These two versions are created to adapt to screen width and performance requirem
 All these images have been converted to .webp and compressed to improve performance of site and lighthouse scoring.
 
 ### 2.4 Wireframes <a name="wireframes"></a>
-Content for Wireframes goes here.
+  ![index](assets/images/wireframes/index-wireframes.png)
+  ![local shops & public sector](assets/images/wireframes/local-public-wireframes.png)
+  ![contact-us](assets/images/wireframes/contact-us-wireframes.png)
+  ![thank-you](assets/images/wireframes/thank-you-wireframes.png)
 
 ## 3. Features <a name="features"></a>
 
@@ -297,7 +300,7 @@ Content for Wireframes goes here.
 
    However, the rendering of the rows was not satisfactory on some specific screen sizes. As a result `.section-box` is created in the css file.
 
-   This `.section-box` class is set as `display: inline-grid;` by default in the css file and is changed to `display: flow;` through a number of media queries to adapt to screen sizes of a width superior to 769px.
+   This `.section-box` class is set as `display: inline-grid;` by default in the css file and is changed to `display: flow;` through a number of media queries to adapt to screen sizes of a width superior to 768px.
 
    ### 3.5 Footer <a name="footer"></a>
    The footer contains links to social media and company name.
@@ -311,7 +314,7 @@ Content for Wireframes goes here.
 
    Addition boostrap classes are such as `data-bs-ride` and `slide`, allowing the carousel to images. `data-bs-ride` is important as without it images would outgrow their container during the "slide" phase to then resize to their desired shape. This is astetically not pleasing and `data-bs-ride` solved this problem.
 
-   **Missing feature**: when going to screen above 769px, the carousel container is no longer set to a width of 100%. As a result, we can see the 6 images being displayed at once during the "slide" transition. I did not find a way to only display 3 at once. 
+   **Missing feature**: when going to screen above 768px, the carousel container is no longer set to a width of 100%. As a result, we can see the 6 images being displayed at once during the "slide" transition. I did not find a way to only display 3 at once. 
 
    ### 3.7 Contact Us Form <a name="contact-us-form"></a>
    This form can be reached if a site user clicks on a "Send Email" button.
@@ -330,13 +333,13 @@ Content for Wireframes goes here.
 
    **Note**: `.width-control-form` is used in the form fields instead of the form element. For some reason, having `.width-control-form` in the <form> element or any <div> above seem to center the field to the left, and not the center of the screen. The solution is not elegant, as the class is repeated but this is the solution we found to the "centering" problem.
 
-   Please note the used of `.hide-button` in the "Email us" buttons in the Box Section area (`local_business.html` and `public_sector.html`). This class turns display to `None` when the screen reaches a 769px. This is handled through a media query.
+   Please note the used of `.hide-button` in the "Email us" buttons in the Box Section area (`local_business.html` and `public_sector.html`). This class turns display to `None` when the screen reaches a 768px. This is handled through a media query.
 
-   The reason for this is because at 769px, the 3 boostrap columns cease to stack on top of each other and display aligned in the same row.
+   The reason for this is because at 768px, the 3 boostrap columns cease to stack on top of each other and display aligned in the same row.
 
    Leaving the design as is, there would be a "Email us" repeated 3 times across the row.
 
-   To make this more aestheticly pleasing, these buttons are hidden at 769px and a single "Email us" button is displayed under the row. This is discussed further in <a name="cta-container">here</a>.
+   To make this more aestheticly pleasing, these buttons are hidden at 768px and a single "Email us" button is displayed under the row. This is discussed further in <a name="cta-container">here</a>.
 
    **Note**: As we prefer to invite people to pro-actively book calls instead of sending emails, the "Email us" form is less available. In screen size lower than 768px, only the "Book a call" button is available in "The Benefits" area.
 
@@ -345,13 +348,13 @@ Content for Wireframes goes here.
 
    As a result, we add a link in the button that redirects the user to calendly. Upon clickling on the button, users are redirected to our calendly calender (linked with our outlook calendar) for them book slots for discovery calls.
 
-   Please note the used of `.hide-button` in the "Book a Call" buttons in the Box Section area (`local_business.html` and `public_sector.html`). This class turns display to `None` when the screen reaches a 769px.This is handled through a media query.
+   Please note the used of `.hide-button` in the "Book a Call" buttons in the Box Section area (`local_business.html` and `public_sector.html`). This class turns display to `None` when the screen reaches a 768px.This is handled through a media query.
 
-   The reason for this is because at 769px the 3 boostrap columns seize to stack on top of each other and display aligned in the same row.
+   The reason for this is because at 768px the 3 boostrap columns seize to stack on top of each other and display aligned in the same row.
 
    Leaving the design as is, there would be a "Book a Call" repeated 3 times across the row.
 
-   To make this more astheticly pleasing, these buttons are hidden at 769px and a single "Book a Call" button is displayed under the row. This is discussed further in <a name="cta-container">here</a>.
+   To make this more astheticly pleasing, these buttons are hidden at 768px and a single "Book a Call" button is displayed under the row. This is discussed further in <a name="cta-container">here</a>.
 
    ### 3.9 Index Page Row <a name="index-row"></a>
    The index page is slightly different than the other pages.
