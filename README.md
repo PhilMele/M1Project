@@ -442,25 +442,39 @@ All these images have been converted to .webp and compressed to improve performa
    #### 5.1.1 HTML <a name="html"></a>
    <details>
       <summary>index.html</summary>
-      ![local_business.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
+      <p>
+         <img src="assets/images/testing_results_images/HTML/index_html_testing.jpg" alt="index.html" />
+      </p>
    </details>
    
    <details>
       <summary>local_business.html</summary>
-      ![local_business.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
-      **Note**: the `<div>` element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+      <p>
+         <img src="assets/images/testing_results_images/HTML/local_business_html_testing.jpg" alt="local_business.html" />
+      </p>
+      <p>
+         <b>Note:</b> the `div` element where <code>bg-img-local-business</code> and <code>bg-img-public sector</code> contains an <code>aria-label="..."</code>. <code>Nu Html Checker</code> will flag it as a warning. Despite the warning, we left it as is, as it allows for a description of the picture, since the image link is handled in the CSS file.
+      </p>
    </details>
 
    <details>
       <summary>public_sector.html</summary>
-      ![public_sector.html](assets/images/testing_results_images/HTML/public_sector_html_testing.jpg)
-      **Note**: the `<div>` element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+      <p>
+         <img src="assets/images/testing_results_images/HTML/public_sector_html_testing.jpg" alt="public_sector.html" />
+      </p>
+      <p>
+         <b>Note:</b> the `div` element where <code>bg-img-local-business</code> and <code>bg-img-public sector</code> contains an <code>aria-label="..."</code>. <code>Nu Html Checker</code> will flag it as a warning. Despite the warning, we left it as is, as it allows for a description of the picture, since the image link is handled in the CSS file.
+      </p>
    </details>
 
    <details>
       <summary>contact_us.html</summary>
-      ![public_sector.html](assets/images/testing_results_images/HTML/public_sector_html_testing.jpg)
-      **Note**: the `<div>` element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+      <p>
+         <img src="assets/images/testing_results_images/HTML/contact_us_html_testing.jpg" alt="contact_us.html" />
+      </p>
+      <p>
+         <b>Note:</b> the `div` element where <code>bg-img-local-business</code> and <code>bg-img-public sector</code> contains an <code>aria-label="..."</code>. <code>Nu Html Checker</code> will flag it as a warning. Despite the warning, we left it as is, as it allows for a description of the picture, since the image link is handled in the CSS file.
+      </p>
    </details>
 
    <details>
@@ -469,7 +483,7 @@ All these images have been converted to .webp and compressed to improve performa
          <img src="assets/images/testing_results_images/HTML/thank_you_html_testing.jpg" alt="thank_you.html" />
       </p>
       <p>
-         <b>Note:</b> the <code>&lt;div&gt;</code> element where <code>bg-img-local-business</code> and <code>bg-img-public sector</code> contains an <code>aria-label="..."</code>. <code>Nu Html Checker</code> will flag it as a warning. Despite the warning, we left it as is, as it allows for a description of the picture, since the image link is handled in the CSS file.
+         <b>Note:</b> the `div` element where <code>bg-img-local-business</code> and <code>bg-img-public sector</code> contains an <code>aria-label="..."</code>. <code>Nu Html Checker</code> will flag it as a warning. Despite the warning, we left it as is, as it allows for a description of the picture, since the image link is handled in the CSS file.
       </p>
    </details>
 
