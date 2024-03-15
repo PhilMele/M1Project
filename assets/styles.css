@@ -478,7 +478,7 @@
         }
     }
 
-    @media only screen and (min-width: 769px) and (max-width:991px) {
+    @media only screen and (min-width: 768px) and (max-width:991px) {
         /*changes image in .bg-img-local-business to fit larger screens*/
         .bg-img-local-business{
             width: 100%;

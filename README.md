@@ -16,6 +16,8 @@ The website covered in this ReadMe will serve as a front end window for potentia
 
 The website is fully responsive and was designed using HTML, CSS and User Centric Design modules.
 
+Although outside the remit of this assessment, some Javascript has been used to customise the boostrap navbar.
+
 View the live site : https://philmele.github.io/M1Project/
 
 # Table of Contents
@@ -36,14 +38,17 @@ View the live site : https://philmele.github.io/M1Project/
    - [Wireframes](#wireframes)
 
 3. [Features](#features)
-   - [Favicon](#favicon)
+   - [Capped Max Screen Resolution] (#max-screen)
    - [Header](#header)
    - [Navigation Bar](#nav-bar)
-   - [Hero Image](#hero-image)
+   - [Box Section](#box-section)
    - [Footer](#footer)
-   - [Gallery Page](#gallery-page)
+   - [Carousel](#carousel-page)
    - [Contact Us Form](#contact-us-form)
-   - [Calendly Form](#calendly-form)
+   - [Book a Call](#calendly-form)
+   - [Index Page Row](#index-row)
+   - [Call to Action Container](#cta-container)
+   - [FAQ](#faq)
 
 4. [Technologies](#tech)
 
@@ -67,7 +72,7 @@ View the live site : https://philmele.github.io/M1Project/
 ### 1.1 Project Goals <a name="project-goals"></a>
 
 #### 1.1.1 User Goals & Expectations <a name="user-goals"></a>
-Users of this page are 3 fold: (1)**Public Sector representatives** such as tourism boards and (2)owners or managers of **local independent shops** (coffee, food and drinks). (3)A third type of users could be actual **users (people) of the digital loyalty card**.
+Users of this page are threefold: (1)Public Sector representatives such as tourism boards and (2)owners or managers of local independent shops (coffee, food and drinks). (3)A third type of users could be actual users (people) of the digital loyalty card.
 
 Each of this potential users will have different goals, which is why they will be prompted, as the index page to identify the purpose of their visit.
 
@@ -112,8 +117,10 @@ Typography will follow the theme taken by the colour pallette, uses fonts that r
 
 We have selected Google Fonts, instead of custom fonts, to benefit from better support.
 
-The fonts selected will be:
+The fonts selected are:
+
 For Logo: Permanent Marker
+
 Text: JetBrains
 
 These fonts can be found on: https://fonts.google.com/
@@ -122,9 +129,9 @@ These fonts can be found on: https://fonts.google.com/
 A selection of icons and images are used for this project.
 
    #### 2.3.1 Icons <a name="icons"></a>
-3 icons are used across 2 pages and can be found in this repo at : assets\images\icons.
+3 icons are used across 2 pages and can be found in this repo at : `assets\images\icons`.
 
-These icons are used for `local_business.html' and 'public_sector.html' to display the 3 benefits of the product to each potential target market (local businesses and public sector entities).
+These icons are used for `local_business.html` and `public_sector.html` to display the 3 benefits of the product to each potential target market (local businesses and public sector entities).
 
    #### 2.3.2 Imagees <a name="images"></a>
 Images are of 3 sorts:
@@ -133,11 +140,13 @@ Images are of 3 sorts:
 
 **Second set of images** are used as background image in the Top Section of the other pages: local_business.html(`assets\images\local_business\main_image`), public_sector.html(`assets\images\public_sector\main_image`), contact_us.html (reusing: `assets\images\local_business\main_image`) and thank_you.html (reusing: `assets\images\local_business\main_image`).
 
-   **Note**: these images exist in 2 versions (under and over 500px). These two version were created to adapt to screen width and performance requirements between mobile and desktop version. These images are switched automatically upon reaching a certain screen size width (500px) through media queries which can be found in : `assets\styles.css`
+These images exist in 2 versions: under and over 500px.
+
+These two versions are created to adapt to screen width and performance requirements between mobile and desktop version. These images are switched automatically upon reaching a certain screen size width (500px) through media queries which can be found in : `assets\styles.css`
 
 **Third set of images** are the cards displaying current customers identify: name, logo and image of the venue.
 
-All these images have been converted to .webp and compressed to improve performan}ce of site and lighthouse scoring.
+All these images have been converted to .webp and compressed to improve performance of site and lighthouse scoring.
 
 ### 2.4 Wireframes <a name="wireframes"></a>
 Content for Wireframes goes here.
@@ -158,7 +167,7 @@ Content for Wireframes goes here.
 
    The header also comes with some styling to garantee navbar and the logo are visible independently of the background image present. To achieve this `.navbar-background-color` is created in the css file applying a dark background. To make sure the transition between the dark background and the background images is made smoothly, `linear-background` is added as the property instead of `background-color`.
 
-      **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
    ### 3.3 Navigation Bar <a name="nav-bar"></a>
    In order to achieve the desired design outcome, the blurred square has to disapear when site user click on .navbar-collapse.
@@ -176,8 +185,11 @@ Content for Wireframes goes here.
    **Step 3 -** within this script element create 2 variables:
       `var blurredSquare = document.getElementById('blurredSquare');
       var navbarCollapse = document.querySelector('.navbar-collapse');`
+   
    **Step 4 -** in .navbar-toggler add statement onclick="toggleBlurredSquare(). Upon clicking on .navbar-toggler a function can activate.
+   
    **Step 5 -** write up functions.
+   
    First function:
       This function creates the possibility to hide the element where blurredSquare is present as an ID.
 
@@ -187,6 +199,7 @@ Content for Wireframes goes here.
                      }
                   </script>
 
+   
    Second function
    This function applies a new property to the css currently applied to `.top-image-blurred-square.hidden`. The function finds the location where function `toggleBlurredSquare` is entered, fetches the relevant css class where id `blurredSquare` is located which is: `.top-image-blurred-square`.
    If this scenario is true and the function will look up for `.top-image-blurred-square` css property with `.hidden` class and applies appointed css:
@@ -212,7 +225,8 @@ Content for Wireframes goes here.
                   }
             </script>
 
-         styles.css:
+   styles.css:
+
             `/*Hides .top-image-blurred-square when navbar-toggle is clicked */
             .top-image-blurred-square.hidden {
                display: none;
@@ -290,21 +304,21 @@ Content for Wireframes goes here.
 
    The icons used are taken from Font Awesome free section.
 
-   ### 3.6 Carousel <a name="gallery-page"></a>
+   ### 3.6 Carousel <a name="carousel-page"></a>
    A boostrap carousel is used in `local_business.html` and `public_sector.html`.
 
-   It is handler through .our-customer-container which sets the following properties: `display`, `margin`, `justify-content` and `align-items`.
+   It is handled through .our-customer-container which sets the following properties: `display`, `margin`, `justify-content` and `align-items`.
 
    Addition boostrap classes are such as `data-bs-ride` and `slide`, allowing the carousel to images. `data-bs-ride` is important as without it images would outgrow their container during the "slide" phase to then resize to their desired shape. This is astetically not pleasing and `data-bs-ride` solved this problem.
 
    **Missing feature**: when going to screen above 769px, the carousel container is no longer set to a width of 100%. As a result, we can see the 6 images being displayed at once during the "slide" transition. I did not find a way to only display 3 at once. 
 
    ### 3.7 Contact Us Form <a name="contact-us-form"></a>
-   This form can be reached a site user clicks on a "Send Email" button.
+   This form can be reached if a site user clicks on a "Send Email" button.
 
    Upon clicking, user is redirected to contact_us.html where a form a displayed.
 
-   The form requires the following field a mandatory using `required`: first name, last name, email address, identity through a drop down menu (platform user, local business or public sector) and a message.
+   The form requires the field as mandatory using `required`: first name, last name, email address, identity through a drop down menu (platform user, local business or public sector) and a message.
 
    `.width-control-form` is used to control the width of fields depending on screen size. 
 
@@ -314,15 +328,17 @@ Content for Wireframes goes here.
 
    This addition redirects the user back to index.html after 10 seconds. To extend or reduce the timeframe `10` can be edited as deemed appropriate. Url can also be changed for to another page.
 
-      **Note**: `.width-control-form` is used in the form fields instead of the form element. For some reason, having `.width-control-form` in the <form> element or any <div> above seem to center the field to the left, and not the center of the screen. The solution is not elegant, as the class is repeated but this is the solution we found to the "centering" problem.
+   **Note**: `.width-control-form` is used in the form fields instead of the form element. For some reason, having `.width-control-form` in the <form> element or any <div> above seem to center the field to the left, and not the center of the screen. The solution is not elegant, as the class is repeated but this is the solution we found to the "centering" problem.
 
    Please note the used of `.hide-button` in the "Email us" buttons in the Box Section area (`local_business.html` and `public_sector.html`). This class turns display to `None` when the screen reaches a 769px. This is handled through a media query.
 
-   The reason for this is because at 769p the 3 boostrap columns seize to stack on top of each other and display aligned in the same row.
+   The reason for this is because at 769px, the 3 boostrap columns cease to stack on top of each other and display aligned in the same row.
 
    Leaving the design as is, there would be a "Email us" repeated 3 times across the row.
 
    To make this more aestheticly pleasing, these buttons are hidden at 769px and a single "Email us" button is displayed under the row. This is discussed further in <a name="cta-container">here</a>.
+
+   **Note**: As we prefer to invite people to pro-actively book calls instead of sending emails, the "Email us" form is less available. In screen size lower than 768px, only the "Book a call" button is available in "The Benefits" area.
 
    ### 3.8 Book a Call - Calendly Form <a name="calendly-form"></a>
    As a part of the call to actions (CTA), we prefer to call booking system through the "Book a Call" button.
@@ -331,7 +347,7 @@ Content for Wireframes goes here.
 
    Please note the used of `.hide-button` in the "Book a Call" buttons in the Box Section area (`local_business.html` and `public_sector.html`). This class turns display to `None` when the screen reaches a 769px.This is handled through a media query.
 
-   The reason for this is because at 769p the 3 boostrap columns seize to stack on top of each other and display aligned in the same row.
+   The reason for this is because at 769px the 3 boostrap columns seize to stack on top of each other and display aligned in the same row.
 
    Leaving the design as is, there would be a "Book a Call" repeated 3 times across the row.
 
@@ -340,31 +356,31 @@ Content for Wireframes goes here.
    ### 3.9 Index Page Row <a name="index-row"></a>
    The index page is slightly different than the other pages.
 
-   The objective of this page is give 3 very simple choices to the visitor: are they a user, a local business or do the represent the public sector?
+   The objective of this page is to give three very simple choices to the visitor: are they a user? a local business?.. or do they represent the public sector?
 
    Each of these choices redirect the user to a specific link that is relevant to who they are and what they are looking for.
 
    To keep the choice simple, the amount of images is also reduced.
 
-   As a result, the navbar entails a specific class `.navbar-background-color-index`, setting the background color to the same color as the rest of the <body>.
+   The navbar entails a specific class `.navbar-background-color-index`, setting the background color to the same color as the rest of the <body>.
 
    Also, the three choices are displayed in a Boostrap 5 row and column setting: user link is presented in the first row and the links to local businesses and public sector pages are displayed in the second row.
 
-   By using boostrap rows and columns, the idea is have the rows displayed at full lenght until the screen resolution doesn't allow it anymore, after which all rows and columns stack on top of each other.
+   By using boostrap rows and columns, the idea is to have the rows displayed at full lenght until the screen resolution doesn't allow it anymore, after which all rows and columns stack on top of each other.
 
-   Consideration for responsivness for the boostrap rows: In addition `.row` is also overwritten in the css file to to display as `grid` as a media query. This is done through `row-index`.
+   **Consideration for responsivness for the boostrap rows**: In addition `.row` is also overwritten in the css file to to display as `grid` as a media query. This is done through `row-index`.
 
-   It is important to no give this attribute to the `.row`, it it will create an error in the display at 678px for other pages (`local_business.html` and public_sector.html`).
+   It is important to not give the `grid` attribute to the `.row`: this will create an error in the display at 678px for other pages (`local_business.html` and public_sector.html`).
    
    Failing this, when reaching 387px the two columns within the second row would start aligning next to each other instead of stacking up. This media query fixes this problem.
    
-   Consideration for responsivness images: To make the images responsive, and allow them to reduce when the screen size is less than the width of the images, class `.index-main-audience` regulates the size of the images for screen between 320 and 387px in a media query.
+   **Consideration for responsivness images**: To make the images responsive, and allow them to reduce when the screen size is less than the width of the images, class `.index-main-audience` regulates the size of the images for screen between 320 and 387px in a media query.
 
 
-   ### 3.10 Call to Action container <a name="cta-container"></a>
+   ### 3.10 Call to Action Container <a name="cta-container"></a>
    Below the box section `<div class="container hide-container">` is used to create a special container.
 
-   This container only appears when screen size is above 769px and is facilited through `.hide-container` handled in the css file.
+   This container only appears when screen size is above 768px and is facilited through `.hide-container` handled in the css file.
 
    The reason for this container to exist, is to avoid duplication of the buttons when the 3 columns in the Box Section are displayed on the same row.
 
@@ -381,56 +397,39 @@ Content for Wireframes goes here.
 
 ## 4. Technologies <a name="tech"></a>
 
-**HTML**
-The main language use through is website is HTML.
+**HTML** - The main language use through is website is HTML.
 
-**CSS**
-CSS is the second most used language and is instrumental in styling and controlling screen width scenarios.
+**CSS** - CSS is the second most used language and is instrumental in styling and controlling screen width scenarios.
 
-**Bootstrap**
-The Bootstrap framework is used throughout this website for layouts and styling. 
+**Bootstrap** - The Bootstrap framework is used throughout this website for layouts and styling. 
 
-**Javascript**
-Javascript has been used on a single occasion to customise the boostrap navbar.
+**Javascript** - Javascript has been used on a single occasion to customise the boostrap navbar.
 
-**Font Awesome**
-Font awesome Icons are used for the social icons displayed in the footer and the navbar's "burger menu" in mobile view.
+**Font Awesome** - Font awesome Icons are used for the social icons displayed in the footer and the navbar's "burger menu" in mobile view.
 
-**Google Fonts**
-Google fonts are used to render the fonts.
+**Google Fonts** - Google fonts are used to render the fonts.
 
-**Visual Studio Code**
-VS Code is the Integrated Development Environment used to develop the Website.
+**Visual Studio Code** - VS Code is the Integrated Development Environment used to develop the Website.
 
-**GitHub**
-GithHub is the hosting site used to store the source code for the Website and Git Pages is used for the deployment of the live site.
+**GitHub** - GithHub is the hosting site used to store the source code for the Website and Git Pages is used for the deployment of the live site.
 
-**Git**
-Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.
+**Git** - Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.
 
-**Convertio**
-Used to convert .jpeg into webp images.
+**Convertio** - Used to convert .jpeg into webp images.
 
-**TinyJPG**
-Used to compress webp images to increase the performance of the site.
+**TinyJPG** - Used to compress webp images to increase the performance of the site.
 
-**Google Chrome Developer Tools**
-Used to debug front end.
+**Google Chrome Developer Tools** - Used to debug front end.
 
-**Balsamiq Wireframes**
-Used to create wireframes.
+**Balsamiq Wireframes** - Used to create wireframes.
 
-**Pixso**
-Used to design wireframes.
+**Pixso** - Used to design wireframes.
 
-**Stable Diffusion**
-Used to images against prompt in Studio Ghibli Style.
+**Stable Diffusion** - Used to images against prompt in Studio Ghibli Style.
 
-**Imageenhan**
-Used to generate Img2img Studio Ghibli Style.
+**Imageenhan** - Used to generate Img2img Studio Ghibli Style.
 
-**ui.dev**
-Used to generate first image in Readme file rendering site in different format.
+**ui.dev** - Used to generate first image in Readme file rendering site in different format.
 
 ## 5. Testing <a name="testing"></a>
 
@@ -446,24 +445,24 @@ Used to generate first image in Readme file rendering site in different format.
 
    ![local_business.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
 
-      **Note**: the `<div>` element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+   **Note**: the `<div>` element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
    **public_sector.html**
 
    ![public_sector.html](assets/images/testing_results_images/HTML/public_sector_html_testing.jpg)
 
-      **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
    **contact_us.html**
 
    ![contact_us.html](assets/images/testing_results_images/HTML/local_business_html_testing.jpg)
    
-      **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
       **thank_you.html**
 
    ![local_business.html](assets/images/testing_results_images/HTML/contact_us_html_testing.jpg)
    
-      **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
+   **Note**: the <div> element where `bg-img-local-business` and `bg-img-public sector` contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
 
    #### 5.1.2 CSS <a name="css"></a>
    ![CSS Testing](assets/images/testing_results_images/CSS/styles.css_css_testing.jpg)
@@ -555,9 +554,9 @@ This link suggested to use event listener + removing event after clicking outsid
 
 Stack Overflow community for general answers regarding `Boostrap` classes and `Javascript`.
 
-Gareth Mc Girr who guided through this project, in particular to increase performance of the pages on mobile view by using WEBP formats.
+Gareth Mc Girr who guided me through this project, in particular to increase performance of the pages on mobile view by using WEBP formats.
 
-Images were taken from the businesses' offical websites and newspaper (Visit Caerphilly, Cadw, Transport for Wales).
+Images were taken from the businesses' offical websites and newspaper (Visit Caerphilly, Cadw, Transport for Wales, Tramshed Tech..).
 
 The processes of the images into "anime like" pictures is done through `Stable Diffusion` and `Imageehan` - a big thank you to Sonic who runs Imageehan. It's a great product.
 
