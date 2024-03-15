@@ -168,6 +168,8 @@ All these images have been converted to .webp and compressed to improve performa
    (2) A customer boostrap navbar which gives site users access to the various pages of the site. We discuss the custom aspect in the next section.
    (3) A blurred square (`.top-image-blurred-square`) that comes on top of `.bg-img-local-business` which contains: a `<h1>`, and a Call to Action section (CtA). The CtA section displays 1 or 2 buttons (depending on screen size) and prompts user to either book a call through a calendly link or leave a message by clicking on button "Email Us" which will redirect the user to `Contact_us.html' that handles the form. This form is discussed futher later on.
 
+   Note: An extra `.top-image-blurred-square` was created for `contact_us.html` and `thank_you.html` as the content within the blurred square is slight different and the rendering was not satisfying.
+
    The header also comes with some styling to garantee navbar and the logo are visible independently of the background image present. To achieve this `.navbar-background-color` is created in the css file applying a dark background. To make sure the transition between the dark background and the background images is made smoothly, `linear-background` is added as the property instead of `background-color`.
 
    **Note**: the `<div>` element where `bg-img-local-business` and `bg-img-public sector` is contains an `aria-label="..."`. `Nu Html Checker` will flag it as a warning. Despite the warning we left it as is, as it allows for description of the picture, since the image link is handled in the css file.
@@ -435,6 +437,8 @@ All these images have been converted to .webp and compressed to improve performa
 
 **ui.dev** - Used to generate first image in Readme file rendering site in different format.
 
+**notion.so** - Used to generate tables for Readme file.
+
 ## 5. Testing <a name="testing"></a>
 
    ### 5.1 Validator Testing <a name="val-testing"></a>
@@ -564,11 +568,67 @@ All these images have been converted to .webp and compressed to improve performa
    </details>
 
    ### 5.4 User Testing <a name="user-testing"></a>
-   Content for User Testing goes here.
+   
+| Item | Description | Steps | Expected Result | Actual Result | Pass/Fail | Comment |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Test brand link on Index Page | Click on Doopee Doo! on top left of screen | User is redirected to index page | User is redirected to index page | Pass |  |
+| 2 | Test links on navbar on Index Page | Click on navbar toggle, or directly on link if screen width allows | User is redirect to the right pages | User is redirect to the right pages | Pass |  |
+| 3 | Test user link on Index Page | Click on user image. | A new page is open redirecting the user to the platform | A new page is open redirecting the user to the platform | Pass |  |
+| 4 | Test local shop link on Index Page | Click on local shop image. | User is redirect to local_business.html | User is redirect to local_business.html | Pass |  |
+| 5 | Test public sector link on Index Page | Click on pulic sector image. | User is redirect to public_sector.html | User is redirect to public_sector.html | Pass |  |
+| 6 | Test social links on Index Page | Click on social icons | A new page is open redirecting the user to the relevant social platform | A new page is open redirecting the user to the relevant social platform | Pass |  |
+| 7 | Test brand link on Local Business Page | Click on Doopee Doo! on top left of screen | User is redirected to index page | User is redirected to index page | Pass |  |
+| 8 | Test links on navbar on Local Business Page | Click on navbar toggle, or directly on link if screen width allows | User is redirect to the right pages | User is redirect to the right pages | Pass |  |
+| 9 | Test social links on Local Business Page | Click on social icons | A new page is open redirecting the user to the relevant social platform | A new page is open redirecting the user to the relevant social platform | Pass |  |
+| 10 | Test book a call on Local Business Page | Click on book a call | User is rediected to Calendly to select time slot on another page | User is rediected to Calendly to select time slot on another page | Pass |  |
+| 11 | Test Email us on Local Business Page | Click on Email Us | User is redirected to contact_us.html | User is redirected to contact_us.html | Pass |  |
+| 12 | Test Carousel Local Business Page | Click on arrows on right and left side of carousel | a deck of 3 other images is displayed to the user, whilst the initial 3 cards slide to the left. | a deck of 3 other images is displayed to the user, whilst the initial 3 cards slide to the left. | Pass |  |
+| 13 | Test FAQ Local Business Page | Click on question | Answers to the questions is displayed to user in a collapsible panel | Answers to the questions is displayed to user in a collapsible panel | Pass |  |
+| 14 | Test brand link on Public Sector Page | Click on Doopee Doo! on top left of screen | User is redirected to index page | User is redirected to index page | Pass |  |
+| 15 | Test links on navbar on Public Sector Page | Click on navbar toggle, or directly on link if screen width allows | User is redirect to the right pages | User is redirect to the right pages | Pass |  |
+| 16 | Test social links on Public Sector Page | Click on social icons | A new page is open redirecting the user to the relevant social platform | A new page is open redirecting the user to the relevant social platform | Pass |  |
+| 17 | Test book a call on Public Sector Page | Click on book a call | User is rediected to Calendly to select time slot on another page | User is rediected to Calendly to select time slot on another page | Pass |  |
+| 18 | Test Email us on Public Sector Page | Click on Email Us | User is redirected to contact_us.html | User is redirected to contact_us.html | Pass |  |
+| 19 | Test Carousel Public Sector Page | Click on arrows on right and left side of carousel | a deck of 3 other images is displayed to the user, whilst the initial 3 cards slide to the left. | a deck of 3 other images is displayed to the user, whilst the initial 3 cards slide to the left. | Pass |  |
+| 20 | Test FAQ Public Sector Page | Click on question | Answers to the questions is displayed to user in a collapsible panel | Answers to the questions is displayed to user in a collapsible panel | Pass |  |
+| 21 | Test brand link on Contact Us Form | Click on Doopee Doo! on top left of screen | User is redirected to index page | User is redirected to index page | Pass |  |
+| 22 | Test links on navbar on Contact Us Form | Click on navbar toggle, or directly on link if screen width allows | User is redirect to the right pages | User is redirect to the right pages | Pass |  |
+| 23 | Test social links on Contact Us Form | Click on social icons | A new page is open redirecting the user to the relevant social platform | A new page is open redirecting the user to the relevant social platform | Pass |  |
+| 24 | Test Form | Populate form. Without missing fields and with all fields | If some fields are not populated the form returns a message requesting the user to populate missing field. If all field completed, user is redirected to thank_html. | If some fields are not populated the form returns a message requesting the user to populate missing field. If all field completed, user is redirected to thank_html. | Pass |  |
+| 25 | Test brand link on Thank You Page | Click on Doopee Doo! on top left of screen | User is redirected to index page | User is redirected to index page | Pass |  |
+| 26 | Test links on navbar on Thank You Page | Click on navbar toggle, or directly on link if screen width allows | User is redirect to the right pages | User is redirect to the right pages | Pass |  |
+| 27 | Test social links on Thank You Page | Click on social icons | A new page is open redirecting the user to the relevant social platform | A new page is open redirecting the user to the relevant social platform | Pass |  |
+| 28 | Test Book a Call on Thank You Page | Click on book a call | User is rediected to Calendly to select time slot on another page | User is rediected to Calendly to select time slot on another page | Pass | Initially failed. The button had the hide-button class, which turned its display to “none” after a certain screen size. |
+| 29 | Test Redirection button on Thank You Page | Click on link “home page” | User is redirected to index.html when click | User is redirected to index.html when click | Pass |  |
+| 30 | Test Javascript of Navbar for Index | Click on toggle in navbar | When user click on toggle pf navbar blurred square disapear and only repears when toggle is clicked again | When user click on toggle pf navbar blurred square disapear and only repears when toggle is clicked again | Pass |  |
+| 31 | Test Javascript of Navbar for Local Business | Click on toggle in navbar | When user click on toggle pf navbar blurred square disapear and only repears when toggle is clicked again | When user click on toggle pf navbar blurred square disapear and only repears when toggle is clicked again | Pass |  |
+| 32 | Test Javascript of Navbar for Public Sector | Click on toggle in navbar | When user click on toggle pf navbar blurred square disapear and only repears when toggle is clicked again | When user click on toggle pf navbar blurred square disapear and only repears when toggle is clicked again | Pass |  |
+| 33 | Test Javascript of Navbar for Contact_us | Click on toggle in navbar | When user click on toggle pf navbar blurred square disapear and only repears when toggle is clicked again | When user click on toggle pf navbar blurred square disapear and only repears when toggle is clicked again | Pass | Initially failed as javascript wasnt on the page. |
+| 34 | Test Javascript of Navbar for Thank_you | Click on toggle in navbar | When user click on toggle pf navbar blurred square disapear and only repears when toggle is clicked again | When user click on toggle pf navbar blurred square disapear and only repears when toggle is clicked again | Pass |  |
+| 35 | Index Page stacks up rows and columns until screen size >992px | Tailor screen width under 992px | When <992px all columns are stacked up | When <992px all columns are stacked up | Pass |  |
+| 36 | Index Page displays full rows width for screen size  <992px | Tailor screen width over 992px | When ≥992px 2 rows are displayed. | When ≥992px 2 rows are displayed. | Pass |  |
+| 37 | Local Business Page - CTA buttons showing within blurred square at all breakpoints | Test screen width at all breaking points | Buttons remain within blurred square area at all time | Buttons remain within blurred square area at all time | Pass |  |
+| 38 | Local Business Page - columns stack up until 768px is reached then show in a single row. | Test render at 767px, 768px and 769px | Until 768px screen width columns are stacked up on top of each other. Then displayed in a single row from 768px. | Until 768px screen width columns are stacked up on top of each other. Then displayed in a single row from 768px. | Pass |  |
+| 39 | Depending on screen width: if columns are stacked up onlshow “Book a call” button at bottom of column. If columns are on a single row dispplay both “Book a Call” and “Email us” buttons.  | Expand and reduce screen size from 320px to 2000px. | When screen size is under 768px “book a call” button appears at bottom of each column. From 768px Book a  Call and Email Us buttons appear at bottom of row | When screen size is under 768px “book a call” button appears at bottom of each column. From 768px Book a  Call and Email Us buttons appear at bottom of row | Pass |  |
+| 40 | Local Business Page - carousel follws width-control from 991px screen size. | Test rendering at 990px, 991px and 992px. | Carousel remains within width set by class | Carousel remains within width set by class | Pass |  |
+| 41 | Local Business Page - FAQ follws width-control from 991px screen size. | Test rendering at 990px, 991px and 992px. | FAQ remains within width set by class | FAQ remains within width set by class | Pass |  |
+| 42 | Public Sector - CTA buttons showing within blurred square at all breakpoints | Test screen width at all breaking points | Buttons remain within blurred square area at all time | Buttons remain within blurred square area at all time | Pass |  |
+| 43 | Public Sector - columns stack up until 768px is reached then show in a single row. | Test render at 767px, 768px and 769px | Until 768px screen width columns are stacked up on top of each other. Then displayed in a single row from 768px. | Until 768px screen width columns are stacked up on top of each other. Then displayed in a single row from 768px. | Pass |  |
+| 44 | Public Sector -Depending on screen width: if columns are stacked up onlshow “Book a call” button at bottom of column. If columns are on a single row dispplay both “Book a Call” and “Email us” buttons.  | Expand and reduce screen size from 320px to 2000px. | When screen size is under 768px “book a call” button appears at bottom of each column. From 768px Book a  Call and Email Us buttons appear at bottom of row | When screen size is under 768px “book a call” button appears at bottom of each column. From 768px Book a  Call and Email Us buttons appear at bottom of row | Pass |  |
+| 45 | Public Sector Page - carousel follws width-control from 991px screen size. | Test rendering at 990px, 991px and 992px. | Carousel remains within width set by class | Carousel remains within width set by class | Pass |  |
+| 46 | Public Sector Page - FAQ follws width-control from 991px screen size. | Test rendering at 990px, 991px and 992px. | FAQ remains within width set by class | FAQ remains within width set by class | Pass |  |
+| 47 | Contact us page is responsive | Expand screen width from 320px to 2000px | No buttons or images are disapearing. Blurred square and content is sized appropriately. | No buttons or images are disapearing. Blurred square and content is sized appropriately. | Pass |  |
+| 48 | Thank You page is responsive | Expand screen width from 320px to 2000px | No buttons or images are disapearing. Blurred square and content is sized appropriately. | No buttons or images are disapearing. Blurred square and content is sized appropriately. | Pass |  |
 
-## 6. Bugs <a name="bugs"></a>
+## 6. Bugs & Considerations for the future <a name="bugs"></a>
 
 !Important mention for contact us section.
+
+`.top-image-blurred-square` and `.top-image-blurred-square-form`: I feel I could have done better here and probably merge both classes, as they look a bit redundant. I only thought of using `fit-content` attribute for the blurred squared. Eventhough it has been in front of me the whole time.
+
+I made too many commit for the Readme file, mostly because I didnt know how to render it without pushing each iterations to github. I only found about `notion.so` at the end of the project, which I used for the tables. Will be using it moving forward from the begining.
+
+Other..
 
 ## 7. Deployment <a name="deployment"></a>
 
@@ -611,6 +671,9 @@ This code put me in the direction of creating a .hidden class in css: https://st
 This link suggested to use event listener + removing event after clicking outside of element : https://stackoverflow.com/questions/73764793/toggle-menu-if-click-outside-then-hide
 
 **ui.dev** : renders responsivness in different formats:  https://ui.dev/amiresponsive
+
+**Collapsible menu in Readme** - https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab
+
 
 Stack Overflow community for general answers regarding `Boostrap` classes and `Javascript`.
 

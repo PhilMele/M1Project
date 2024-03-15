@@ -365,6 +365,22 @@
         width:75%
     }
 
+    .top-image-blurred-square-form{
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        bottom: 10%;
+        background: rgb(255, 255, 255, 0.61);
+        border-radius: 20px;
+        margin: 5px;
+        padding: 5px;
+    
+    }
+    
+    .top-image-blurred-square-form.hidden {
+        display: none;
+    }
+
     
 
 /* Media Queries */
@@ -611,7 +627,7 @@
         }
         /* Override height and top properties to move blurred squared up */
         .top-image-blurred-square {
-            height: 45%;
+            height: 48%;
             top: 40%; 
         }
 
