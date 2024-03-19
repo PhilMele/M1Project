@@ -367,7 +367,7 @@
                 }
 
 
-            // Second function
+            // Second function()
             // By activating it applies a new property to the css currently applied to .top-image-blurred-square.hidden
             // fecth location where function 'toggleBlurredSquare' is entered, fetch relevant css class where id 'blurredSquare' is located: .top-image-blurred-square
             // look up for .top-image-blurred-square css property with '.hidden' class and applies appointed css
@@ -385,7 +385,6 @@
                 
                 var isNavbarToggler = event.target('.navbar-toggler');
                 var isNavbarCollapse = event.target('.navbar-collapse');
-                var isBlurredSquare = event.target('.top-image-blurred-square');
 
                 // these variables (isNavbarToggler, isNavbarCollapse, isBlurredSquare) are then used to define 
                 //what happens when a 'click' occurs on an element 
@@ -395,7 +394,7 @@
                 //any of the variables stated above, then:
                     //(1) navbarCollapse - which is on show - is removed
                     //(2) blurredSquare  - which is set display: None through .top-image-blurred-square.hidden property - is removed
-                if (!isNavbarToggler && !isNavbarCollapse && !isBlurredSquare) {
+                if (!isNavbarToggler && !isNavbarCollapse) {
                     navbarCollapse.classList.remove('show');
                     blurredSquare.classList.remove('hidden');
                 }

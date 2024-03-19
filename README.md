@@ -294,6 +294,8 @@ All these images have been converted to .webp and compressed to improve performa
 
    **Missing feature**: would be great to have .navbar-collapse to be switched to `show` if user clicks outside the navbar. However, I could not find a way to achieve this. 
 
+   See [Bugs](#bugs) for credited solution.
+
    ### 3.4 Box Section <a name="box-section"></a>
    Box sections represent content displayed on `local.business.html` and `public_sector.html` as part of the "Benefits" section.
 
@@ -438,6 +440,8 @@ All these images have been converted to .webp and compressed to improve performa
 **ui.dev** - Used to generate first image in Readme file rendering site in different format.
 
 **notion.so** - Used to generate tables for Readme file.
+
+**ChatGPT** - Used to find solution listed in [Bugs](#bugs). Note this solution is not in the code.
 
 ## 5. Testing <a name="testing"></a>
 
@@ -622,13 +626,41 @@ All these images have been converted to .webp and compressed to improve performa
 
 ## 6. Bugs & Considerations for the future <a name="bugs"></a>
 
-!Important mention for contact us section.
+`.contact-us-row` contains an `!Important` as I couldn't find a way to set `display: flex` without it.
 
 There is a few redundancy, or at least areas where the code could be made more efficent: `.top-image-blurred-square` and `.top-image-blurred-square-form`: I feel I could have done better here and probably merge both classes, as they look a bit redundant. I only thought of using `fit-content` attribute for the blurred squared. Eventhough it has been in front of me the whole time.
 
 I made too many commit for the Readme file, mostly because I didnt know how to render it without pushing each iterations to github. I only found about `notion.so` at the end of the project, which I used for the tables. Will be using it moving forward from the begining.
 
-Other..
+**Navbar + solution**
+The <script> that triggers that customised navbar returns an error in the developer tool: `Uncaught TypeError: event.target is not a function
+    at HTMLDocument.<anonymous>`.
+
+This error does not seem to cause any problem in the functionality of the website.
+
+An another disapointment of this project is that I also did not manage to find a solution to get the customised navbar to close by itself when the user clicks outside the navbar panel.
+
+**Custom Navbar - The Fix**
+
+This solution was delivered using ChatGPT and is not in the code. 
+
+My initial plan was to implement this fix in the code and obviously credit the source. After conversation with Code Institute they advised to not put the code provided by ChatGPT in the template for the purpose of the assessement. 
+
+As a result, and for the sake completness, I thoughth I would add the finalised code in this section, together with my understanding of it:
+
+This is the finalised missing code:
+
+   var isNavbarToggler = event.target.closest('.navbar-toggler');
+   var isNavbarCollapse = event.target.closest('.navbar-collapse');
+
+The addition is the use of `closest()`.
+
+According W3School (https://www.w3schools.com/jsref/met_element_closest.asp), `closest()` is a method that looks up for a CSS selector from the element itself all the way up to the parent elements the child element could have.
+
+In this case, looks up for parent element linked to either `.navbar-toggler` or `.navbar-collapse`. If this look up returns `null` (the user did not click on the toggle, or an element in the navbar collapsible panel) then `.navbar-collapse` is not rendered.
+
+I also not that my error : `Uncaught TypeError: event.target is not a function at HTMLDocument.<anonymous>` has also disapeared from the browser console.
+
 
 ## 7. Deployment <a name="deployment"></a>
 
