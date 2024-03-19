@@ -168,7 +168,7 @@ All these images have been converted to .webp and compressed to improve performa
    (2) A customer boostrap navbar which gives site users access to the various pages of the site. We discuss the custom aspect in the next section.
    (3) A blurred square (`.top-image-blurred-square`) that comes on top of `.bg-img-local-business` which contains: a `<h1>`, and a Call to Action section (CtA). The CtA section displays 1 or 2 buttons (depending on screen size) and prompts user to either book a call through a calendly link or leave a message by clicking on button "Email Us" which will redirect the user to `Contact_us.html' that handles the form. This form is discussed futher later on.
 
-   Note: An extra `.top-image-blurred-square` was created for `contact_us.html` and `thank_you.html` as the content within the blurred square is slight different and the rendering was not satisfying.
+   **Note**: An extra `.top-image-blurred-square` was created for `contact_us.html` and `thank_you.html` as the content within the blurred square is slight different and the rendering was not satisfying.
 
    The header also comes with some styling to garantee navbar and the logo are visible independently of the background image present. To achieve this `.navbar-background-color` is created in the css file applying a dark background. To make sure the transition between the dark background and the background images is made smoothly, `linear-background` is added as the property instead of `background-color`.
 
@@ -342,7 +342,7 @@ All these images have been converted to .webp and compressed to improve performa
 
    Leaving the design as is, there would be a "Email us" repeated 3 times across the row.
 
-   To make this more aestheticly pleasing, these buttons are hidden at 768px and a single "Email us" button is displayed under the row. This is discussed further in <a name="cta-container">here</a>.
+   To make this more aestheticly pleasing, these buttons are hidden at 768px and a single "Email us" button is displayed under the row. This is discussed further [here](#cta-container).
 
    **Note**: As we prefer to invite people to pro-actively book calls instead of sending emails, the "Email us" form is less available. In screen size lower than 768px, only the "Book a call" button is available in "The Benefits" area.
 
@@ -357,7 +357,7 @@ All these images have been converted to .webp and compressed to improve performa
 
    Leaving the design as is, there would be a "Book a Call" repeated 3 times across the row.
 
-   To make this more astheticly pleasing, these buttons are hidden at 768px and a single "Book a Call" button is displayed under the row. This is discussed further in <a name="cta-container">here</a>.
+   To make this more astheticly pleasing, these buttons are hidden at 768px and a single "Book a Call" button is displayed under the row. This is discussed further in [here](#cta-container).
 
    ### 3.9 Index Page Row <a name="index-row"></a>
    The index page is slightly different than the other pages.
@@ -535,7 +535,7 @@ All these images have been converted to .webp and compressed to improve performa
       <summary>PUBLIC SECTOR</summary>
       <p>
          <h3>Mobile</h3>
-         <img src="" alt="local business mobile" />
+         <img src="assets/images/testing_results_images/Lighthouse/public_sector/public_sector_lighthouse_mobile.png" alt="local business mobile" />
       </p>
       <p>
          <h3>Desktop</h3>
@@ -624,7 +624,7 @@ All these images have been converted to .webp and compressed to improve performa
 
 !Important mention for contact us section.
 
-`.top-image-blurred-square` and `.top-image-blurred-square-form`: I feel I could have done better here and probably merge both classes, as they look a bit redundant. I only thought of using `fit-content` attribute for the blurred squared. Eventhough it has been in front of me the whole time.
+There is a few redundancy, or at least areas where the code could be made more efficent: `.top-image-blurred-square` and `.top-image-blurred-square-form`: I feel I could have done better here and probably merge both classes, as they look a bit redundant. I only thought of using `fit-content` attribute for the blurred squared. Eventhough it has been in front of me the whole time.
 
 I made too many commit for the Readme file, mostly because I didnt know how to render it without pushing each iterations to github. I only found about `notion.so` at the end of the project, which I used for the tables. Will be using it moving forward from the begining.
 
@@ -650,7 +650,7 @@ Using your code editor, such as VS Code, click on `open folder` and click on the
 
 **Making boostrap cards same color across all columns** : https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-cards-the-same-height-in-card-columns
 
-**Carousel section **: https://stackoverflow.com/questions/75345639/bootstrap-5-multiple-cards-in-carousel
+**Carousel section** : https://stackoverflow.com/questions/75345639/bootstrap-5-multiple-cards-in-carousel
 
 **Linear Gradient** - https://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear
 
