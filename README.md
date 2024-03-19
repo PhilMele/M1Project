@@ -630,6 +630,8 @@ There is a few redundancy, or at least areas where the code could be made more e
 
 I made too many commit for the Readme file, mostly because I didnt know how to render it without pushing each iterations to github. I only found about `notion.so` at the end of the project, which I used for the tables. Will be using it moving forward from the begining.
 
+The carousel, when going to screen above 768px, is no longer set to a width of 100%. As a result, we can see the 6 images being displayed at once during the "slide" transition. I did not find a way to only display 3 at once. 
+
 **Navbar + solution**
 The <script> that triggers that customised navbar returns an error in the developer tool: `Uncaught TypeError: event.target is not a function
     at HTMLDocument.<anonymous>`.
