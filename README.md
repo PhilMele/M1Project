@@ -56,7 +56,6 @@ View the live site : https://philmele.github.io/M1Project/
    - [Validator Testing](#val-testing)
      * [HTML](#html)
      * [CSS](#css)
-   - [Wave Testing](#wave-testing)
    - [Lighthouse Testing](#lighthouse-testing)
    - [User Testing](#user-testing)
 
@@ -503,10 +502,7 @@ All these images have been converted to .webp and compressed to improve performa
       </p>
    </details>
 
-   ### 5.2 Wave Testing <a name="wave-testing"></a>
-   Content for Wave Testing goes here.
-
-   ### 5.3 Lighthouse Testing <a name="lighthouse-testing"></a>
+   ### 5.2 Lighthouse Testing <a name="lighthouse-testing"></a>
    **INDEX**
    <details>
       <summary>INDEX</summary>
@@ -571,7 +567,7 @@ All these images have been converted to .webp and compressed to improve performa
       </p>
    </details>
 
-   ### 5.4 User Testing <a name="user-testing"></a>
+   ### 5.3 User Testing <a name="user-testing"></a>
    
 | Item | Description | Steps | Expected Result | Actual Result | Pass/Fail | Comment |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -626,6 +622,8 @@ All these images have been converted to .webp and compressed to improve performa
 
 ## 6. Bugs & Considerations for the future <a name="bugs"></a>
 
+Wide screen rendering - we had a once off opportunity to test the site on a 4K gaming screen and showed the buttons coming stlightly out of the blurred square. I have been unable to reproduce this rendering since.
+
 `.contact-us-row` contains an `!Important` as I couldn't find a way to set `display: flex` without it.
 
 There is a few redundancy, or at least areas where the code could be made more efficent: `.top-image-blurred-square` and `.top-image-blurred-square-form`: I feel I could have done better here and probably merge both classes, as they look a bit redundant. I only thought of using `fit-content` attribute for the blurred squared. Eventhough it has been in front of me the whole time.
@@ -646,12 +644,12 @@ This solution was delivered using ChatGPT and is not in the code.
 
 My initial plan was to implement this fix in the code and obviously credit the source. After conversation with Code Institute they advised to not put the code provided by ChatGPT in the template for the purpose of the assessement. 
 
-As a result, and for the sake completness, I thoughth I would add the finalised code in this section, together with my understanding of it:
+As a result, and for the sake completness, I thoughth I would add the finalised code in this section, together with my understanding of it.
 
 This is the finalised missing code:
 
-   var isNavbarToggler = event.target.closest('.navbar-toggler');
-   var isNavbarCollapse = event.target.closest('.navbar-collapse');
+      var isNavbarToggler = event.target.closest('.navbar-toggler');
+      var isNavbarCollapse = event.target.closest('.navbar-collapse');
 
 The addition is the use of `closest()`.
 
