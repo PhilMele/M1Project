@@ -442,6 +442,8 @@ All these images have been converted to .webp and compressed to improve performa
 
 **ChatGPT** - Used to find solution listed in [Bugs](#bugs). Note this solution is not in the code.
 
+**Favicon.io** - Used to generate favicon
+
 ## 5. Testing <a name="testing"></a>
 
    ### 5.1 Validator Testing <a name="val-testing"></a>
