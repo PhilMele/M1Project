@@ -1,9 +1,6 @@
 /*Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-  
-
-
 
 /* General */
     html{
@@ -20,7 +17,8 @@
 
     .shadow{
         padding: 10px;
-        box-shadow: 5px 10px 8px #888888;}
+        box-shadow: 5px 10px 8px #888888;
+    }
     h1{
         font-size: 24px;
     }
@@ -174,6 +172,7 @@
     .width-control{
         width:100%
     }
+    
     /* removes blue links under a tag */
     a {
         color: inherit; 
@@ -191,7 +190,7 @@
     }
 
     .contact-us-row{
-        display: flex !important;
+
         text-align: center;
     }
 
@@ -227,8 +226,6 @@
         margin: 5px;
     }
 
-
-/* Header */
 
 /* Footer */
 
@@ -381,7 +378,9 @@
         display: none;
     }
 
-    
+    .contact-us-page-row{
+        display:contents
+    }   
 
 /* Media Queries */
     /*main images queries 387, 900 up to 2192px
@@ -645,9 +644,9 @@
 
    /* Media Query for responsiveness when screen size is between 320px and 330px */
     @media only screen and (max-width: 330px) {
-        /* Adjusts img elements to screen size in Index page when screen size is between 320px and 330px */
+
         .top-image-blurred-square {
-            height: 50%;
-            top: 40%;
+            height: 60%;
+            top: auto;
         }   
     }
