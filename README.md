@@ -626,8 +626,6 @@ All these images have been converted to .webp and compressed to improve performa
 
 Wide screen rendering - we had a once off opportunity to test the site on a 4K gaming screen and showed the buttons coming stlightly out of the blurred square. I have been unable to reproduce this rendering since.
 
-`.contact-us-row` contains an `!Important` as I couldn't find a way to set `display: flex` without it.
-
 There is a few redundancy, or at least areas where the code could be made more efficent: `.top-image-blurred-square` and `.top-image-blurred-square-form`: I feel I could have done better here and probably merge both classes, as they look a bit redundant. I only thought of using `fit-content` attribute for the blurred squared. Eventhough it has been in front of me the whole time.
 
 I made too many commit for the Readme file, mostly because I didnt know how to render it without pushing each iterations to github. I only found about `notion.so` at the end of the project, which I used for the tables. Will be using it moving forward from the begining.
